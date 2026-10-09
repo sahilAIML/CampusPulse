@@ -20,6 +20,7 @@ import { ClayCard } from '@/components/ui/ClayCard';
 import { ClayButton } from '@/components/ui/ClayButton';
 import { ClayInput } from '@/components/ui/ClayInput';
 import { ClayBadge } from '@/components/ui/ClayBadge';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { UserRole } from '@/lib/data/types';
 import { loginUser } from '@/lib/data/auth';
 
@@ -70,8 +71,8 @@ export default function LoginPage() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-[#FF7A59]/15 blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-[#2EC4B6]/15 blur-3xl pointer-events-none" />
 
-      {/* Back button */}
-      <div className="w-full max-w-lg mb-4">
+      {/* Back button & Theme Mode Switcher */}
+      <div className="w-full max-w-lg mb-4 flex items-center justify-between">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-xs font-heading font-extrabold text-[var(--clay-muted)] hover:text-[#FF7A59] transition-colors"
@@ -79,6 +80,7 @@ export default function LoginPage() {
           <ArrowLeft className="h-4 w-4" />
           <span>Back to Landing Page</span>
         </Link>
+        <ThemeToggle size="sm" />
       </div>
 
       {/* Main Clay Card Form */}

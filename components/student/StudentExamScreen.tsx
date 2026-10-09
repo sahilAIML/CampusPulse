@@ -22,6 +22,7 @@ import {
 import { ClayCard } from '../ui/ClayCard';
 import { ClayBadge } from '../ui/ClayBadge';
 import { ClayButton } from '../ui/ClayButton';
+import { ThemeToggle } from '../ui/ThemeToggle';
 import {
   Exam,
   ExamQuestion,
@@ -253,6 +254,9 @@ export function StudentExamScreen({
               <Clock className={`h-4 w-4 ${isTimeCritical ? 'text-rose-500' : 'text-[#FF7A59]'}`} />
               <span className="tabular-nums">{formattedTime}</span>
             </div>
+
+            {/* Theme Selector */}
+            <ThemeToggle size="sm" />
 
             {/* Palette Trigger Button */}
             <button

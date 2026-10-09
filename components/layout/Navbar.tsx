@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { ClayButton } from '../ui/ClayButton';
 import { ClayBadge } from '../ui/ClayBadge';
+import { ThemeToggle } from '../ui/ThemeToggle';
 import { MobileMenuBottomSheet } from './MobileMenuBottomSheet';
 
 interface NavbarProps {
@@ -142,14 +143,8 @@ export function Navbar({ onOpenAuth }: NavbarProps) {
               </ClayBadge>
             </div>
 
-            {/* Dark mode toggle */}
-            <button
-              onClick={toggleDarkMode}
-              aria-label="Toggle clay theme"
-              className="h-10 w-10 rounded-2xl bg-[var(--clay-card)] border border-[var(--clay-border)] flex items-center justify-center text-[var(--clay-muted)] shadow-[var(--shadow-clay-btn)] hover:text-[var(--clay-text)] active:scale-95 transition-all"
-            >
-              {darkMode ? <Sun className="h-4 w-4 text-[#FFC857]" /> : <Moon className="h-4 w-4 text-[#5B6CFF]" />}
-            </button>
+            {/* Black / White / B&W Theme Option */}
+            <ThemeToggle size="sm" />
 
             {/* Login / Access Button */}
             <ClayButton

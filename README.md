@@ -151,7 +151,25 @@ CampusPulse App
 
 ---
 
-## 🎨 Design System & Aesthetics
+## 🎨 Design System, Aesthetics & Theme System
+
+### 🌓 Universal Black, White & B&W Theme System
+CampusPulse features a multi-mode theme switcher accessible across **every single portal**:
+- **☀️ White Theme (Light Mode)**: Crisp, clean light aesthetic with high-contrast slate typography and soft claymorphic shadows.
+- **🌙 Black Theme (Dark Mode)**: Deep dark obsidian/slate aesthetic with luminous glowing highlights and white typography.
+- **🏁 B&W Theme (High-Contrast Monochrome)**: Pure black-and-white high-contrast mode with grayscale filter for enhanced readability and focus.
+
+#### Available Everywhere:
+- **Student Portal (`/student`)**: Header quick-selector & exam control bar (`/student/exam/[id]`).
+- **Faculty Portal (`/faculty`)**: Sticky header bar & sidebar navigation drawer.
+- **Admin Portal (`/admin`)**: Institutional governance header & desktop admin sidebar.
+- **Login Portal (`/login`)**: Direct theme switcher above credentials card.
+- **Landing Navigation (`/`)**: Desktop navbar & responsive mobile drawer.
+- **Zero-Flicker Pre-Hydration**: Stored in `localStorage` (`campuspulse_theme`) and applied inline before DOM rendering to eliminate theme flashes.
+
+---
+
+### ✨ Visual Design & Typography
 - **Global Typography**: Google Font **Oxanium** applied across all headings, cards, and data metrics.
 - **Tactile Claymorphism**: Soft double shadows, specular highlights, and pastel accents (Coral `#FF7A59`, Teal `#2EC4B6`, Indigo `#5B6CFF`, Amber `#FFA116`).
 - **High-Contrast Typography**: Luminous white text with drop shadows rendered over edge-to-edge campus animation.

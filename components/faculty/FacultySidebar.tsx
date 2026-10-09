@@ -16,6 +16,7 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import { logoutUser, getSessionUser } from '@/lib/data/auth';
+import { ThemeToggle } from '../ui/ThemeToggle';
 
 interface FacultySidebarProps {
   activeTab?: string;
@@ -90,6 +91,14 @@ export function FacultySidebar({
 
       {/* User Profile & Logout Bottom Card */}
       <div className="pt-4 border-t border-[var(--clay-border)] space-y-3">
+        {/* Black / White / B&W Theme Option */}
+        <div className="flex items-center justify-between px-1">
+          <span className="text-[10px] font-extrabold uppercase tracking-wider text-[var(--clay-muted)]">
+            Theme Mode:
+          </span>
+          <ThemeToggle size="sm" />
+        </div>
+
         {/* Faculty Profile Card */}
         <div className="p-3.5 rounded-2xl bg-[var(--clay-pressed)]/70 border border-[var(--clay-border)] flex items-center gap-3">
           <div className="relative h-10 w-10 rounded-xl overflow-hidden bg-[#2EC4B6] border border-[var(--clay-border)] flex items-center justify-center font-heading font-extrabold shadow-[var(--shadow-clay-teal)] flex-shrink-0">

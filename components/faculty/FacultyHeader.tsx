@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Search, Sparkles, User, AlertTriangle, ArrowRight, X } from 'lucide-react';
 import { ClayInput } from '../ui/ClayInput';
 import { ClayBadge } from '../ui/ClayBadge';
+import { ThemeToggle } from '../ui/ThemeToggle';
 import { StudentListItem } from '@/lib/data/students';
 import { getSessionUser } from '@/lib/data/auth';
 
@@ -94,9 +95,11 @@ export function FacultyHeader({
         </div>
       </div>
 
-      {/* Right: Instant Student Search with Dropdown Suggestions */}
-      <div ref={searchContainerRef} className="relative w-full md:w-80 lg:w-96">
-        <ClayInput
+      {/* Right: Theme Selector & Instant Student Search */}
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+        <ThemeToggle size="sm" />
+        <div ref={searchContainerRef} className="relative w-full md:w-80 lg:w-96">
+          <ClayInput
           placeholder="Search name or reg no (e.g. 241FA18067)..."
           icon={<Search className="h-4 w-4" />}
           value={searchQuery}
@@ -168,6 +171,7 @@ export function FacultyHeader({
             ))}
           </div>
         )}
+      </div>
       </div>
     </header>
   );

@@ -40,7 +40,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${oxanium.variable} font-sans scroll-smooth`}>
+    <html lang="en" suppressHydrationWarning className={`${oxanium.variable} font-sans scroll-smooth`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var saved = localStorage.getItem('campuspulse_theme');
+                  var root = document.documentElement;
+                  if (saved === 'white') {
+                    root.classList.remove('dark', 'theme-bw');
+                    root.classList.add('theme-white');
+                  } else if (saved === 'bw') {
+                    root.classList.add('dark', 'theme-bw');
+                    root.classList.remove('theme-white');
+                  } else {
+                    root.classList.add('dark');
+                    root.classList.remove('theme-bw', 'theme-white');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-screen text-[var(--clay-text)] antialiased transition-colors duration-300 font-sans relative">
         {/* Full-screen HD Background Animation Video (Edge-to-Edge Big Coverage) */}
         <div

@@ -15,6 +15,7 @@ import { DetailedStudentDossier } from '@/lib/data/student-portal';
 import { logoutUser } from '@/lib/data/auth';
 import { useRouter } from 'next/navigation';
 import { EditProfileModal } from './EditProfileModal';
+import { ThemeToggle } from '../ui/ThemeToggle';
 
 interface StudentPortalHeaderProps {
   dossier: DetailedStudentDossier;
@@ -65,6 +66,9 @@ export function StudentPortalHeader({
 
           {/* Right: Actions */}
           <div className="flex flex-wrap items-center gap-2.5">
+            {/* Black / White / B&W Theme Option */}
+            <ThemeToggle size="sm" />
+
             {/* Edit Profile & Coding Links Button */}
             <ClayButton
               variant="default"

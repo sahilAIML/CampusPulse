@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { X, Sparkles, Megaphone, Briefcase, LogIn, ShieldAlert, GraduationCap, Users } from 'lucide-react';
 import { ClayButton } from '../ui/ClayButton';
 import { ClayBadge } from '../ui/ClayBadge';
+import { ThemeToggle } from '../ui/ThemeToggle';
 
 interface MobileMenuBottomSheetProps {
   isOpen: boolean;
@@ -52,6 +53,14 @@ export function MobileMenuBottomSheet({
           >
             <X className="h-5 w-5" />
           </button>
+        </div>
+
+        {/* Theme Mode Selector */}
+        <div className="flex items-center justify-between p-3 rounded-2xl bg-[var(--clay-pressed)]/50 border border-[var(--clay-border)] mb-5">
+          <span className="text-xs font-heading font-extrabold text-[var(--clay-muted)]">
+            Appearance:
+          </span>
+          <ThemeToggle size="sm" />
         </div>
 
         {/* Navigation Links */}

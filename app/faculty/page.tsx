@@ -23,6 +23,7 @@ import { StudentListItem, getSectionStudents } from '@/lib/data/students';
 import { getSessionUser } from '@/lib/data/auth';
 import { AuthUser } from '@/lib/data/types';
 import { ClayCard } from '@/components/ui/ClayCard';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 export default function FacultyDashboardPage() {
   const [currentSection, setCurrentSection] = useState<'A' | 'B' | 'C' | 'all'>('A');
@@ -65,7 +66,10 @@ export default function FacultyDashboardPage() {
   if (authChecked && (!currentUser || currentUser.role === 'student')) {
     return (
       <div className="min-h-screen flex items-center justify-center p-4 bg-[var(--clay-bg)] text-[var(--clay-text)]">
-        <ClayCard className="max-w-lg p-8 text-center space-y-5 border-2 border-[var(--clay-border)] shadow-[var(--shadow-clay-card-hover)]">
+        <ClayCard className="max-w-lg p-8 text-center space-y-5 border-2 border-[var(--clay-border)] shadow-[var(--shadow-clay-card-hover)] relative">
+          <div className="flex justify-end">
+            <ThemeToggle size="sm" />
+          </div>
           <div className="h-16 w-16 rounded-3xl bg-rose-500/15 text-rose-600 mx-auto flex items-center justify-center shadow-[var(--shadow-clay-badge)]">
             <ShieldAlert className="h-8 w-8" />
           </div>

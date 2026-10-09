@@ -42,6 +42,7 @@ import {
 import { getSessionUser } from '@/lib/data/auth';
 import { ClayCard } from '@/components/ui/ClayCard';
 import { ClayButton } from '@/components/ui/ClayButton';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 export default function StudentPortalPage() {
   const router = useRouter();
@@ -104,7 +105,10 @@ export default function StudentPortalPage() {
   if (authChecked && !currentUser) {
     return (
       <div className="min-h-screen flex items-center justify-center p-4 bg-[var(--clay-bg)] text-[var(--clay-text)]">
-        <ClayCard className="max-w-md p-8 text-center space-y-5 border-2 border-[var(--clay-border)] shadow-[var(--shadow-clay-card-hover)]">
+        <ClayCard className="max-w-md p-8 text-center space-y-5 border-2 border-[var(--clay-border)] shadow-[var(--shadow-clay-card-hover)] relative">
+          <div className="flex justify-end">
+            <ThemeToggle size="sm" />
+          </div>
           <div className="h-16 w-16 rounded-3xl bg-[#5B6CFF]/15 text-[#5B6CFF] mx-auto flex items-center justify-center shadow-[var(--shadow-clay-badge)]">
             <Lock className="h-8 w-8" />
           </div>
