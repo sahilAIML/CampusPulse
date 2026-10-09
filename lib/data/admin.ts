@@ -1,0 +1,762 @@
+// ============================================================================
+// CAMPUSPULSE: SMART CAMPUS ANALYTICS
+// Data Access Layer: Admin Intelligence, Profile Lookup, Weight Tuning,
+// Institutional Dashboard, CSV Ingestion, and Audit Logs
+// ============================================================================
+
+import {
+  ScoreWeightsConfig,
+  DEFAULT_SCORE_WEIGHTS,
+  RawStudentMetrics,
+} from '../analytics/types';
+import {
+  batchComputeStudentScores,
+  computeSectionBenchmarks,
+} from '../analytics/engine';
+import { getSectionStudents, getStudentDetail, StudentDetail } from './students';
+import { MOCK_ANNOUNCEMENTS, MOCK_PLACEMENTS } from './mock-store';
+import { Announcement, PlacementRecord } from './types';
+
+// ----------------------------------------------------------------------------
+// FACULTY PROFILES DATA
+// ----------------------------------------------------------------------------
+export interface FacultyProfile {
+  reg_no: string; // e.g. FAC210
+  full_name: string;
+  department: string;
+  assigned_sections: string[];
+  attendance_pct: number;
+  workload_hours_per_week: number;
+  courses_taught: string[];
+  email: string;
+  avatar_url: string;
+  office_location: string;
+  cabin_hours: string;
+}
+
+export interface StudentAdminProfile extends StudentDetail {
+  leetcode_url: string;
+  codechef_url: string;
+  linkedin_url: string;
+  github_url: string;
+}
+
+export interface DepartmentMetric {
+  department: string;
+  code: string;
+  student_count: number;
+  faculty_count: number;
+  avg_success_score: number;
+  placement_rate_pct: number;
+  at_risk_count: number;
+  at_risk_rate_pct: number;
+}
+
+export interface HeatmapCell {
+  section: string;
+  indicator: string;
+  weight_max: number;
+  avg_score: number;
+  pct_of_max: number;
+  status: 'safe' | 'warning' | 'critical';
+}
+
+export interface AuditLogEntry {
+  id: string;
+  timestamp: string;
+  action: string;
+  actor: string;
+  target: string;
+  details: string;
+  severity: 'info' | 'warning' | 'critical' | 'success';
+}
+
+export interface AdminUser {
+  id: string;
+  email: string;
+  full_name: string;
+  role: 'admin' | 'faculty' | 'student';
+  reg_no: string;
+  status: 'active' | 'suspended';
+  created_at: string;
+}
+
+// In-Memory Faculty Directory
+const MOCK_FACULTY_PROFILES: Record<string, FacultyProfile> = {
+  'FAC210': {
+    reg_no: 'FAC210',
+    full_name: 'Prof. Ananya Sharma',
+    department: 'Computer Science & Engineering',
+    assigned_sections: ['Section A', 'Section B'],
+    attendance_pct: 96.5,
+    workload_hours_per_week: 18,
+    courses_taught: [
+      'Data Structures & Algorithms (CS301)',
+      'Operating Systems Architecture (CS304)',
+      'Algorithmic Problem Solving Clinic',
+    ],
+    email: 'ananya.sharma@campuspulse.edu',
+    avatar_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150',
+    office_location: 'Academic Block 3, Room 308',
+    cabin_hours: 'Tue/Thu 14:00 - 16:00',
+  },
+  'FAC204': {
+    reg_no: 'FAC204',
+    full_name: 'Prof. Rajesh Kumar',
+    department: 'Computer Science & Engineering',
+    assigned_sections: ['Section C'],
+    attendance_pct: 94.0,
+    workload_hours_per_week: 16,
+    courses_taught: [
+      'Database Management Systems (CS302)',
+      'Computer Networks & Protocols (CS305)',
+    ],
+    email: 'rajesh.kumar@campuspulse.edu',
+    avatar_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150',
+    office_location: 'Academic Block 3, Room 312',
+    cabin_hours: 'Mon/Wed 15:00 - 17:00',
+  },
+  'FAC312': {
+    reg_no: 'FAC312',
+    full_name: 'Dr. Vikram Sengupta',
+    department: 'AI & Data Science',
+    assigned_sections: ['Section A'],
+    attendance_pct: 98.0,
+    workload_hours_per_week: 14,
+    courses_taught: [
+      'Foundations of Machine Learning (AI301)',
+      'Applied Probability & Stochastic Modeling (AI303)',
+    ],
+    email: 'vikram.sengupta@campuspulse.edu',
+    avatar_url: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
+    office_location: 'AI Research Tower, Cabin 402',
+    cabin_hours: 'Fri 10:00 - 13:00',
+  },
+};
+
+// In-Memory Users Directory
+let MOCK_USERS_STORE: AdminUser[] = [
+  {
+    id: 'usr-1',
+    email: 'admin.kpmg@campuspulse.edu',
+    full_name: 'Dr. S. K. Narayanan (Dean of Academics)',
+    role: 'admin',
+    reg_no: 'ADM001',
+    status: 'active',
+    created_at: '2026-01-15T08:00:00Z',
+  },
+  {
+    id: 'usr-2',
+    email: 'ananya.sharma@campuspulse.edu',
+    full_name: 'Prof. Ananya Sharma',
+    role: 'faculty',
+    reg_no: 'FAC210',
+    status: 'active',
+    created_at: '2026-02-01T09:30:00Z',
+  },
+  {
+    id: 'usr-3',
+    email: 'rajesh.kumar@campuspulse.edu',
+    full_name: 'Prof. Rajesh Kumar',
+    role: 'faculty',
+    reg_no: 'FAC204',
+    status: 'active',
+    created_at: '2026-02-01T09:30:00Z',
+  },
+  {
+    id: 'usr-4',
+    email: 'md.sahil@student.campuspulse.edu',
+    full_name: 'MD SAHIL',
+    role: 'student',
+    reg_no: '241FA18067',
+    status: 'active',
+    created_at: '2026-07-20T11:00:00Z',
+  },
+  {
+    id: 'usr-5',
+    email: 'sagar@student.campuspulse.edu',
+    full_name: 'SAGAR',
+    role: 'student',
+    reg_no: '241FA04070',
+    status: 'active',
+    created_at: '2026-07-20T11:00:00Z',
+  },
+];
+
+// In-Memory Audit Trail
+let MOCK_AUDIT_LOGS: AuditLogEntry[] = [
+  {
+    id: 'aud-105',
+    timestamp: '2026-10-09T08:15:22Z',
+    action: 'EXAM_PUBLISHED',
+    actor: 'Prof. Ananya Sharma (FAC210)',
+    target: 'CIE-2: Data Structures & Algorithms',
+    details: 'Published 10-question MCQ assessment to All Sections. Autograding and Academic score feed active.',
+    severity: 'success',
+  },
+  {
+    id: 'aud-104',
+    timestamp: '2026-10-08T16:40:10Z',
+    action: 'INTERVENTION_ASSIGNED',
+    actor: 'Prof. Ananya Sharma (FAC210)',
+    target: 'MD SAHIL (241FA18067)',
+    details: 'Assigned Attendance Warning: Target 12 consecutive lectures to exceed 75% cutoff.',
+    severity: 'warning',
+  },
+  {
+    id: 'aud-103',
+    timestamp: '2026-10-08T11:20:00Z',
+    action: 'WEIGHT_CONFIG_TUNED',
+    actor: 'Dr. S. K. Narayanan (ADM001)',
+    target: 'Global Success Weights',
+    details: 'Calibrated Academic weight to 30% and Placement to 15%. Recomputed campus-wide scores.',
+    severity: 'info',
+  },
+  {
+    id: 'aud-102',
+    timestamp: '2026-10-07T09:15:00Z',
+    action: 'ANNOUNCEMENT_POSTED',
+    actor: 'Academic Registrar',
+    target: 'All B.Tech CSE Cohorts',
+    details: 'Posted: Mid-Term Examination Timetable Rescheduled for October 24th.',
+    severity: 'info',
+  },
+  {
+    id: 'aud-101',
+    timestamp: '2026-10-06T14:00:00Z',
+    action: 'CSV_COHORT_INGEST',
+    actor: 'Data Ops Team (ADM002)',
+    target: 'CSE Section C Roster',
+    details: 'Ingested 40 verified student profiles with RFID attendance telemetry.',
+    severity: 'success',
+  },
+];
+
+// In-Memory Global Weights
+let currentScoreWeights: ScoreWeightsConfig = { ...DEFAULT_SCORE_WEIGHTS };
+
+// In-Memory Announcements and Placements CRUD clones
+let adminAnnouncements: Announcement[] = [...MOCK_ANNOUNCEMENTS];
+let adminPlacements: PlacementRecord[] = [...MOCK_PLACEMENTS];
+
+// ----------------------------------------------------------------------------
+// 1. QUICK PROFILE LOOKUP (Faculty & Student)
+// ----------------------------------------------------------------------------
+
+export async function lookupFacultyProfile(id: string): Promise<FacultyProfile | null> {
+  const cleanId = id.trim().toUpperCase();
+  const found = MOCK_FACULTY_PROFILES[cleanId];
+  if (found) return found;
+
+  // Case-insensitive partial search
+  const match = Object.values(MOCK_FACULTY_PROFILES).find(
+    (f) => f.reg_no.toLowerCase() === cleanId.toLowerCase() || f.full_name.toLowerCase().includes(cleanId.toLowerCase())
+  );
+  return match || null;
+}
+
+export async function lookupStudentProfile(id: string): Promise<StudentAdminProfile | null> {
+  const cleanId = id.trim().toUpperCase();
+  const detail = await getStudentDetail(cleanId);
+  if (!detail) return null;
+
+  // Add coding and professional profiles (with realistic slugs)
+  const slug = detail.full_name.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return {
+    ...detail,
+    leetcode_url: `https://leetcode.com/u/${slug}_dev`,
+    codechef_url: `https://www.codechef.com/users/${slug}_tech`,
+    linkedin_url: `https://linkedin.com/in/${slug}-cse`,
+    github_url: `https://github.com/${slug}`,
+  };
+}
+
+// ----------------------------------------------------------------------------
+// 2. INSTITUTION-WIDE DASHBOARD DATA
+// ----------------------------------------------------------------------------
+
+export async function getDepartmentComparison(): Promise<DepartmentMetric[]> {
+  return [
+    {
+      department: 'Computer Science & Engineering',
+      code: 'CSE',
+      student_count: 120,
+      faculty_count: 14,
+      avg_success_score: 79.4,
+      placement_rate_pct: 88.5,
+      at_risk_count: 5,
+      at_risk_rate_pct: 4.2,
+    },
+    {
+      department: 'AI & Data Science',
+      code: 'AIDS',
+      student_count: 85,
+      faculty_count: 9,
+      avg_success_score: 81.2,
+      placement_rate_pct: 91.0,
+      at_risk_count: 3,
+      at_risk_rate_pct: 3.5,
+    },
+    {
+      department: 'Electronics & Communication',
+      code: 'ECE',
+      student_count: 110,
+      faculty_count: 12,
+      avg_success_score: 75.8,
+      placement_rate_pct: 79.0,
+      at_risk_count: 8,
+      at_risk_rate_pct: 7.3,
+    },
+    {
+      department: 'Information Technology',
+      code: 'IT',
+      student_count: 90,
+      faculty_count: 10,
+      avg_success_score: 78.1,
+      placement_rate_pct: 84.5,
+      at_risk_count: 4,
+      at_risk_rate_pct: 4.4,
+    },
+  ];
+}
+
+export async function getRiskHeatmapData(): Promise<HeatmapCell[]> {
+  // Matrix of 3 sections x 7 indicators
+  const sections = ['Section A', 'Section B', 'Section C'];
+  const indicators = [
+    { name: 'Academic', weight: 30, scores: [25.4, 21.8, 24.2] },
+    { name: 'Attendance', weight: 20, scores: [16.8, 13.9, 17.5] },
+    { name: 'LMS Activity', weight: 10, scores: [8.5, 6.4, 8.1] },
+    { name: 'Engagement', weight: 10, scores: [7.2, 5.1, 7.8] },
+    { name: 'Placement', weight: 15, scores: [12.6, 9.8, 11.9] },
+    { name: 'Skills Profile', weight: 10, scores: [8.1, 6.9, 7.9] },
+    { name: 'Feedback', weight: 5, scores: [4.4, 3.8, 4.3] },
+  ];
+
+  const cells: HeatmapCell[] = [];
+
+  sections.forEach((sec, sIdx) => {
+    indicators.forEach((ind) => {
+      const avgScore = ind.scores[sIdx];
+      const pct = (avgScore / ind.weight) * 100;
+      let status: 'safe' | 'warning' | 'critical' = 'safe';
+      if (pct < 60) status = 'critical';
+      else if (pct < 75) status = 'warning';
+
+      cells.push({
+        section: sec,
+        indicator: ind.name,
+        weight_max: ind.weight,
+        avg_score: Number(avgScore.toFixed(1)),
+        pct_of_max: Math.round(pct),
+        status,
+      });
+    });
+  });
+
+  return cells;
+}
+
+export async function getSegmentSizeBreakdown(): Promise<{ segment: string; count: number; pct: number; color: string }[]> {
+  const students = await getSectionStudents('all');
+  const counts: Record<string, number> = {};
+
+  students.forEach((s) => {
+    counts[s.segment] = (counts[s.segment] || 0) + 1;
+  });
+
+  const colors: Record<string, string> = {
+    'Consistent Achievers': '#2EC4B6',
+    'High Academics / Low Placement Readiness': '#5B6CFF',
+    'Disengaged but Capable': '#FFC857',
+    'Academically At-Risk': '#EF4444',
+    'Skill-Strong, Marks-Weak': '#FF7A59',
+  };
+
+  const total = students.length || 1;
+  return Object.entries(counts).map(([seg, count]) => ({
+    segment: seg,
+    count,
+    pct: Math.round((count / total) * 100),
+    color: colors[seg] || '#A0AEC0',
+  }));
+}
+
+// ----------------------------------------------------------------------------
+// 3. SCORE WEIGHT TUNING & LIVE RECOMPUTE PREVIEW
+// ----------------------------------------------------------------------------
+
+export async function getActiveScoreWeights(): Promise<ScoreWeightsConfig> {
+  return currentScoreWeights;
+}
+
+export async function saveScoreWeights(newWeights: ScoreWeightsConfig): Promise<ScoreWeightsConfig> {
+  currentScoreWeights = { ...newWeights };
+
+  // Log audit event
+  await logAuditEvent({
+    action: 'WEIGHT_CONFIG_TUNED',
+    actor: 'Administrator (ADM001)',
+    target: 'score_weights_config',
+    details: `Updated weights: Academic=${newWeights.academic_weight}%, Attendance=${newWeights.attendance_weight}%, Placement=${newWeights.placement_weight}%.`,
+    severity: 'warning',
+  });
+
+  return currentScoreWeights;
+}
+
+export async function previewWeightTuning(newWeights: ScoreWeightsConfig): Promise<{
+  baseline_avg: number;
+  tuned_avg: number;
+  delta_avg: number;
+  baseline_at_risk_count: number;
+  tuned_at_risk_count: number;
+  delta_at_risk: number;
+  affected_students: {
+    reg_no: string;
+    name: string;
+    old_score: number;
+    new_score: number;
+    risk_direction: 'elevated' | 'reduced' | 'neutral';
+  }[];
+}> {
+  const students = await getSectionStudents('all');
+
+  // Compute baseline average
+  const baselineSum = students.reduce((acc, s) => acc + s.success_score, 0);
+  const baselineAvg = Number((baselineSum / students.length).toFixed(1));
+  const baselineAtRisk = students.filter((s) => s.risk_level === 'critical' || s.risk_level === 'high').length;
+
+  // Simulate new scores
+  const affected: any[] = [];
+  let tunedSum = 0;
+  let tunedAtRiskCount = 0;
+
+  students.forEach((s) => {
+    // Dynamic adjustment simulation
+    const weightShiftRatio =
+      (newWeights.academic_weight * (s.cgpa / 10) +
+        newWeights.attendance_weight * (s.attendance_pct / 100) +
+        newWeights.placement_weight * (s.coding_score / 100)) /
+      (DEFAULT_SCORE_WEIGHTS.academic_weight * (s.cgpa / 10) +
+        DEFAULT_SCORE_WEIGHTS.attendance_weight * (s.attendance_pct / 100) +
+        DEFAULT_SCORE_WEIGHTS.placement_weight * (s.coding_score / 100));
+
+    const simulatedScore = Math.max(20, Math.min(99, Number((s.success_score * (0.8 + weightShiftRatio * 0.2)).toFixed(1))));
+    tunedSum += simulatedScore;
+
+    const isNowAtRisk = simulatedScore < 60;
+    if (isNowAtRisk) tunedAtRiskCount++;
+
+    const wasAtRisk = s.risk_level === 'critical' || s.risk_level === 'high';
+    let riskDir: 'elevated' | 'reduced' | 'neutral' = 'neutral';
+    if (!wasAtRisk && isNowAtRisk) riskDir = 'elevated';
+    else if (wasAtRisk && !isNowAtRisk) riskDir = 'reduced';
+
+    if (s.reg_no === '241FA18067' || s.reg_no === '241FA04070' || Math.abs(simulatedScore - s.success_score) > 3) {
+      affected.push({
+        reg_no: s.reg_no,
+        name: s.full_name,
+        old_score: s.success_score,
+        new_score: simulatedScore,
+        risk_direction: riskDir,
+      });
+    }
+  });
+
+  const tunedAvg = Number((tunedSum / students.length).toFixed(1));
+
+  return {
+    baseline_avg: baselineAvg,
+    tuned_avg: tunedAvg,
+    delta_avg: Number((tunedAvg - baselineAvg).toFixed(1)),
+    baseline_at_risk_count: baselineAtRisk,
+    tuned_at_risk_count: tunedAtRiskCount,
+    delta_at_risk: tunedAtRiskCount - baselineAtRisk,
+    affected_students: affected.slice(0, 8),
+  };
+}
+
+// ----------------------------------------------------------------------------
+// 4. CSV BULK IMPORTER & VALIDATION REPORT
+// ----------------------------------------------------------------------------
+
+export interface CSVValidationError {
+  row: number;
+  field: string;
+  error: string;
+  value: string;
+}
+
+export interface CSVValidationReport {
+  total_rows: number;
+  valid_rows_count: number;
+  failed_rows_count: number;
+  valid_records: any[];
+  errors: CSVValidationError[];
+}
+
+export function validateStudentCSV(csvText: string): CSVValidationReport {
+  const lines = csvText.trim().split(/\r?\n/);
+  if (lines.length < 2) {
+    return {
+      total_rows: 0,
+      valid_rows_count: 0,
+      failed_rows_count: 0,
+      valid_records: [],
+      errors: [{ row: 1, field: 'header', error: 'File is empty or contains no data lines', value: '' }],
+    };
+  }
+
+  const errors: CSVValidationError[] = [];
+  const validRecords: any[] = [];
+  const seenRegNos = new Set<string>();
+
+  // Check header
+  const header = lines[0].toLowerCase();
+  const requiredColumns = ['reg_no', 'full_name', 'section', 'cgpa', 'attendance_pct'];
+
+  for (let i = 1; i < lines.length; i++) {
+    const rawLine = lines[i].trim();
+    if (!rawLine) continue;
+
+    const parts = rawLine.split(',').map((p) => p.trim().replace(/^["']|["']$/g, ''));
+    if (parts.length < 5) {
+      errors.push({
+        row: i + 1,
+        field: 'row_length',
+        error: `Insufficient columns (${parts.length}/5 required)`,
+        value: rawLine,
+      });
+      continue;
+    }
+
+    const [regNo, name, sec, cgpaStr, attStr, backlogsStr] = parts;
+    let hasRowError = false;
+
+    // 1. Reg No validation (e.g. 241FA18067)
+    if (!regNo || regNo.length < 8) {
+      errors.push({ row: i + 1, field: 'reg_no', error: 'Invalid registration number format', value: regNo });
+      hasRowError = true;
+    } else if (seenRegNos.has(regNo.toUpperCase())) {
+      errors.push({ row: i + 1, field: 'reg_no', error: 'Duplicate reg_no within import file', value: regNo });
+      hasRowError = true;
+    } else {
+      seenRegNos.add(regNo.toUpperCase());
+    }
+
+    // 2. Name validation
+    if (!name || name.length < 2) {
+      errors.push({ row: i + 1, field: 'full_name', error: 'Student full name is missing', value: name });
+      hasRowError = true;
+    }
+
+    // 3. Section validation
+    if (!sec || !['A', 'B', 'C', 'SEC-A', 'SEC-B', 'SEC-C'].includes(sec.toUpperCase())) {
+      errors.push({ row: i + 1, field: 'section', error: 'Section must be A, B, or C', value: sec });
+      hasRowError = true;
+    }
+
+    // 4. CGPA validation (0.0 to 10.0)
+    const cgpa = parseFloat(cgpaStr);
+    if (isNaN(cgpa) || cgpa < 0 || cgpa > 10.0) {
+      errors.push({ row: i + 1, field: 'cgpa', error: 'CGPA must be between 0.00 and 10.00', value: cgpaStr });
+      hasRowError = true;
+    }
+
+    // 5. Attendance validation (0 to 100)
+    const att = parseFloat(attStr);
+    if (isNaN(att) || att < 0 || att > 100) {
+      errors.push({ row: i + 1, field: 'attendance_pct', error: 'Attendance must be between 0% and 100%', value: attStr });
+      hasRowError = true;
+    }
+
+    // 6. Backlogs validation (>= 0)
+    const backlogs = backlogsStr ? parseInt(backlogsStr, 10) : 0;
+    if (isNaN(backlogs) || backlogs < 0) {
+      errors.push({ row: i + 1, field: 'backlogs', error: 'Backlogs count must be a non-negative integer', value: backlogsStr });
+      hasRowError = true;
+    }
+
+    if (!hasRowError) {
+      validRecords.push({
+        reg_no: regNo.toUpperCase(),
+        full_name: name,
+        section: sec.toUpperCase().replace('SEC-', ''),
+        cgpa,
+        attendance_pct: att,
+        backlogs,
+      });
+    }
+  }
+
+  return {
+    total_rows: lines.length - 1,
+    valid_rows_count: validRecords.length,
+    failed_rows_count: (lines.length - 1) - validRecords.length,
+    valid_records: validRecords,
+    errors,
+  };
+}
+
+export async function commitCSVStudentImport(validRecords: any[]): Promise<{ imported_count: number }> {
+  // Log audit
+  await logAuditEvent({
+    action: 'CSV_COHORT_INGEST',
+    actor: 'Administrator (ADM001)',
+    target: 'students_master',
+    details: `Ingested ${validRecords.length} validated student telemetry records. Deduplicated and synced.`,
+    severity: 'success',
+  });
+
+  return { imported_count: validRecords.length };
+}
+
+// ----------------------------------------------------------------------------
+// 5. USER MANAGEMENT
+// ----------------------------------------------------------------------------
+
+export async function getAdminUsers(): Promise<AdminUser[]> {
+  return MOCK_USERS_STORE;
+}
+
+export async function updateUserRole(userId: string, newRole: 'admin' | 'faculty' | 'student'): Promise<AdminUser | null> {
+  const target = MOCK_USERS_STORE.find((u) => u.id === userId);
+  if (!target) return null;
+
+  target.role = newRole;
+  await logAuditEvent({
+    action: 'USER_ROLE_UPDATED',
+    actor: 'Administrator (ADM001)',
+    target: `${target.full_name} (${target.reg_no})`,
+    details: `Role updated to ${newRole.toUpperCase()}. Permissions updated.`,
+    severity: 'warning',
+  });
+  return target;
+}
+
+export async function toggleUserStatus(userId: string): Promise<AdminUser | null> {
+  const target = MOCK_USERS_STORE.find((u) => u.id === userId);
+  if (!target) return null;
+
+  target.status = target.status === 'active' ? 'suspended' : 'active';
+  await logAuditEvent({
+    action: 'USER_STATUS_TOGGLED',
+    actor: 'Administrator (ADM001)',
+    target: `${target.full_name} (${target.reg_no})`,
+    details: `Account status set to ${target.status.toUpperCase()}.`,
+    severity: target.status === 'active' ? 'success' : 'critical',
+  });
+  return target;
+}
+
+// ----------------------------------------------------------------------------
+// 6. ANNOUNCEMENTS & PLACEMENTS CRUD
+// ----------------------------------------------------------------------------
+
+export async function getAdminAnnouncements(): Promise<Announcement[]> {
+  return adminAnnouncements;
+}
+
+export async function createAdminAnnouncement(data: {
+  title: string;
+  body: string;
+  type: string;
+  audience: string;
+}): Promise<Announcement> {
+  const newAnn: Announcement = {
+    id: `ann-${Date.now()}`,
+    title: data.title,
+    body: data.body,
+    type: data.type as any,
+    audience: data.audience,
+    created_at: new Date().toISOString(),
+    created_by_name: 'Academic Affairs Admin',
+    created_by_role: 'admin',
+  };
+
+  adminAnnouncements = [newAnn, ...adminAnnouncements];
+  await logAuditEvent({
+    action: 'ANNOUNCEMENT_CREATED',
+    actor: 'Academic Affairs Admin',
+    target: newAnn.title,
+    details: `Published announcement for audience: ${newAnn.audience}.`,
+    severity: 'info',
+  });
+  return newAnn;
+}
+
+export async function deleteAdminAnnouncement(id: string): Promise<boolean> {
+  adminAnnouncements = adminAnnouncements.filter((a) => a.id !== id);
+  await logAuditEvent({
+    action: 'ANNOUNCEMENT_DELETED',
+    actor: 'Administrator (ADM001)',
+    target: `Announcement #${id}`,
+    details: 'Removed from public notices.',
+    severity: 'warning',
+  });
+  return true;
+}
+
+export async function getAdminPlacements(): Promise<PlacementRecord[]> {
+  return adminPlacements;
+}
+
+export async function createAdminPlacement(data: {
+  company: string;
+  year: number;
+  students_placed: number;
+  total_eligible: number;
+  package_lpa: number;
+  roles: string[];
+}): Promise<PlacementRecord> {
+  const newPlace: PlacementRecord = {
+    id: `pl-${Date.now()}`,
+    company: data.company,
+    year: data.year,
+    students_placed: data.students_placed,
+    total_eligible: data.total_eligible,
+    package_lpa: data.package_lpa,
+    roles: data.roles,
+  };
+
+  adminPlacements = [newPlace, ...adminPlacements];
+  await logAuditEvent({
+    action: 'PLACEMENT_RECORD_ADDED',
+    actor: 'Placement Officer',
+    target: `${data.company} (${data.year})`,
+    details: `Logged ${data.students_placed} hires at ${data.package_lpa} LPA.`,
+    severity: 'success',
+  });
+  return newPlace;
+}
+
+export async function deleteAdminPlacement(id: string): Promise<boolean> {
+  adminPlacements = adminPlacements.filter((p) => p.id !== id);
+  await logAuditEvent({
+    action: 'PLACEMENT_RECORD_DELETED',
+    actor: 'Placement Officer',
+    target: `Placement Record #${id}`,
+    details: 'Removed placement entry.',
+    severity: 'warning',
+  });
+  return true;
+}
+
+// ----------------------------------------------------------------------------
+// 7. AUDIT LOGGING
+// ----------------------------------------------------------------------------
+
+export async function getAuditLogs(): Promise<AuditLogEntry[]> {
+  return MOCK_AUDIT_LOGS;
+}
+
+export async function logAuditEvent(entry: Omit<AuditLogEntry, 'id' | 'timestamp'>): Promise<AuditLogEntry> {
+  const newEntry: AuditLogEntry = {
+    ...entry,
+    id: `aud-${Date.now()}`,
+    timestamp: new Date().toISOString(),
+  };
+  MOCK_AUDIT_LOGS = [newEntry, ...MOCK_AUDIT_LOGS];
+  return newEntry;
+}

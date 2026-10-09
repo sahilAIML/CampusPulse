@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm Off-White Tactile Canvas Palette */
+  --clay-bg: #EEF1F6;
+  --clay-card: #EEF1F6;
+  --clay-pressed: #E4E9F1;
+  --clay-border: rgba(255, 255, 255, 0.6);
+  --clay-text: #2D3748;
+  --clay-muted: #718096;
+
+  /* Double Shadows: Outer Drop + Inner Specular Highlight + Inner Shade */
+  --shadow-clay-card: 12px 12px 24px rgba(163, 177, 198, 0.45),
+                      -8px -8px 20px rgba(255, 255, 255, 0.9),
+                      inset 4px 4px 8px rgba(255, 255, 255, 0.7),
+                      inset -4px -4px 8px rgba(163, 177, 198, 0.25);
+
+  --shadow-clay-card-hover: 14px 14px 28px rgba(163, 177, 198, 0.5),
+                            -10px -10px 24px rgba(255, 255, 255, 0.95),
+                            inset 4px 4px 8px rgba(255, 255, 255, 0.8),
+                            inset -4px -4px 8px rgba(163, 177, 198, 0.25);
+
+  --shadow-clay-card-pressed: inset 6px 6px 12px rgba(163, 177, 198, 0.45),
+                              inset -6px -6px 12px rgba(255, 255, 255, 0.8);
+
+  --shadow-clay-btn: 8px 8px 18px rgba(163, 177, 198, 0.45),
+                     -6px -6px 14px rgba(255, 255, 255, 0.9),
+                     inset 3px 3px 6px rgba(255, 255, 255, 0.8),
+                     inset -3px -3px 6px rgba(163, 177, 198, 0.25);
+
+  --shadow-clay-btn-hover: 10px 10px 22px rgba(163, 177, 198, 0.5),
+                           -8px -8px 18px rgba(255, 255, 255, 0.95),
+                           inset 3px 3px 6px rgba(255, 255, 255, 0.9),
+                           inset -3px -3px 6px rgba(163, 177, 198, 0.25);
+
+  --shadow-clay-btn-pressed: inset 5px 5px 10px rgba(163, 177, 198, 0.5),
+                             inset -5px -5px 10px rgba(255, 255, 255, 0.8);
+
+  --shadow-clay-input: inset 4px 4px 8px rgba(163, 177, 198, 0.45),
+                       inset -4px -4px 8px rgba(255, 255, 255, 0.85);
+
+  --shadow-clay-badge: 4px 4px 10px rgba(163, 177, 198, 0.35),
+                       -3px -3px 8px rgba(255, 255, 255, 0.85),
+                       inset 2px 2px 4px rgba(255, 255, 255, 0.7),
+                       inset -2px -2px 4px rgba(163, 177, 198, 0.2);
+
+  --shadow-clay-pill: 6px 6px 14px rgba(163, 177, 198, 0.35),
+                      -4px -4px 10px rgba(255, 255, 255, 0.85),
+                      inset 2px 2px 5px rgba(255, 255, 255, 0.7),
+                      inset -2px -2px 5px rgba(163, 177, 198, 0.2);
+
+  --shadow-clay-coral: 8px 8px 18px rgba(255, 122, 89, 0.35),
+                       -6px -6px 14px rgba(255, 255, 255, 0.8),
+                       inset 3px 3px 6px rgba(255, 255, 255, 0.6),
+                       inset -3px -3px 6px rgba(200, 80, 50, 0.25);
+
+  --shadow-clay-teal: 8px 8px 18px rgba(46, 196, 182, 0.35),
+                      -6px -6px 14px rgba(255, 255, 255, 0.8),
+                      inset 3px 3px 6px rgba(255, 255, 255, 0.6),
+                      inset -3px -3px 6px rgba(30, 140, 130, 0.25);
+}
+
+.dark {
+  /* Dark Clay Theme */
+  --clay-bg: #1A1E29;
+  --clay-card: #202634;
+  --clay-pressed: #171B24;
+  --clay-border: rgba(255, 255, 255, 0.08);
+  --clay-text: #EDF2F7;
+  --clay-muted: #A0AEC0;
+
+  --shadow-clay-card: 10px 10px 22px rgba(10, 13, 18, 0.65),
+                      -6px -6px 16px rgba(44, 52, 70, 0.4),
+                      inset 3px 3px 6px rgba(255, 255, 255, 0.07),
+                      inset -3px -3px 6px rgba(10, 13, 18, 0.5);
+
+  --shadow-clay-card-hover: 12px 12px 26px rgba(10, 13, 18, 0.75),
+                            -8px -8px 20px rgba(44, 52, 70, 0.45),
+                            inset 3px 3px 6px rgba(255, 255, 255, 0.1),
+                            inset -3px -3px 6px rgba(10, 13, 18, 0.5);
+
+  --shadow-clay-card-pressed: inset 5px 5px 12px rgba(10, 13, 18, 0.8),
+                              inset -5px -5px 12px rgba(44, 52, 70, 0.35);
+
+  --shadow-clay-btn: 7px 7px 16px rgba(10, 13, 18, 0.65),
+                     -5px -5px 14px rgba(44, 52, 70, 0.4),
+                     inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+                     inset -2px -2px 5px rgba(10, 13, 18, 0.5);
+
+  --shadow-clay-btn-hover: 9px 9px 20px rgba(10, 13, 18, 0.75),
+                           -7px -7px 16px rgba(44, 52, 70, 0.45),
+                           inset 2px 2px 5px rgba(255, 255, 255, 0.12),
+                           inset -2px -2px 5px rgba(10, 13, 18, 0.5);
+
+  --shadow-clay-btn-pressed: inset 4px 4px 10px rgba(10, 13, 18, 0.8),
+                             inset -4px -4px 10px rgba(44, 52, 70, 0.35);
+
+  --shadow-clay-input: inset 4px 4px 8px rgba(10, 13, 18, 0.7),
+                       inset -4px -4px 8px rgba(44, 52, 70, 0.35);
+
+  --shadow-clay-badge: 4px 4px 10px rgba(10, 13, 18, 0.5),
+                       -3px -3px 8px rgba(44, 52, 70, 0.3),
+                       inset 2px 2px 4px rgba(255, 255, 255, 0.08),
+                       inset -2px -2px 4px rgba(10, 13, 18, 0.4);
+
+  --shadow-clay-coral: 8px 8px 18px rgba(224, 95, 63, 0.4),
+                       -5px -5px 12px rgba(44, 52, 70, 0.35),
+                       inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+                       inset -2px -2px 5px rgba(100, 30, 20, 0.5);
+
+  --shadow-clay-teal: 8px 8px 18px rgba(34, 158, 146, 0.4),
+                      -5px -5px 12px rgba(44, 52, 70, 0.35),
+                      inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+                      inset -2px -2px 5px rgba(15, 70, 65, 0.5);
+}
+
+/* Base resets & Oxanium typography */
+*, *::before, *::after {
+  font-family: var(--font-oxanium), 'Oxanium', monospace, sans-serif;
+}
+
+body {
+  background-color: var(--clay-bg);
+  color: var(--clay-text);
+  font-family: var(--font-oxanium), 'Oxanium', monospace, sans-serif;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-oxanium), 'Oxanium', monospace, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+input, button, select, textarea {
+  font-family: var(--font-oxanium), 'Oxanium', monospace, sans-serif;
+}
+
+/* Tabular figures for all numerical values */
+.tabular-nums, .stat-value, .metric, table td {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Clay Utility Classes */
+.clay-surface {
+  background-color: var(--clay-card);
+  border: 1px solid var(--clay-border);
+  box-shadow: var(--shadow-clay-card);
+  border-radius: 28px;
+  transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 250ms ease-out;
+}
+
+.clay-surface-hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-clay-card-hover);
+}
+
+.clay-surface-hoverable:active {
+  transform: scale(0.97);
+  box-shadow: var(--shadow-clay-card-pressed);
+}
+
+.clay-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 700;
+  border-radius: 24px;
+  padding: 0.75rem 1.5rem;
+  min-height: 44px;
+  min-width: 44px;
+  cursor: pointer;
+  border: 1px solid var(--clay-border);
+  box-shadow: var(--shadow-clay-btn);
+  background-color: var(--clay-card);
+  color: var(--clay-text);
+  transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 200ms ease-out, background-color 200ms ease;
+  user-select: none;
+}
+
+.clay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-clay-btn-hover);
+}
+
+.clay-btn:active {
+  transform: scale(0.97);
+  box-shadow: var(--shadow-clay-btn-pressed);
+}
+
+.clay-btn-coral {
+  background-color: #FF7A59;
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: var(--shadow-clay-coral);
+}
+
+.clay-btn-teal {
+  background-color: #2EC4B6;
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: var(--shadow-clay-teal);
+}
+
+.clay-input {
+  background-color: var(--clay-card);
+  border: 1px solid var(--clay-border);
+  box-shadow: var(--shadow-clay-input);
+  border-radius: 20px;
+  padding: 0.75rem 1.25rem;
+  color: var(--clay-text);
+  min-height: 44px;
+  outline: none;
+  transition: all 200ms ease;
+}
+
+.clay-input:focus {
+  border-color: #FF7A59;
+  box-shadow: var(--shadow-clay-input), 0 0 0 3px rgba(255, 122, 89, 0.25);
+}
+
+.clay-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid var(--clay-border);
+  box-shadow: var(--shadow-clay-badge);
+}
+
+/* Accessibility: Focus Visible Rings */
+*:focus-visible {
+  outline: 3px solid #5B6CFF;
+  outline-offset: 2px;
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
