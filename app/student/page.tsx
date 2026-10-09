@@ -27,6 +27,7 @@ import { Announcement } from '@/lib/data/types';
 import { StudentPortalHeader } from '@/components/student/StudentPortalHeader';
 import { StudentScoreGauge } from '@/components/student/StudentScoreGauge';
 import { StudentIndicatorsList } from '@/components/student/StudentIndicatorsList';
+import { PlacementRiskCard } from '@/components/student/PlacementRiskCard';
 import { HowToImprovePlan } from '@/components/student/HowToImprovePlan';
 import { StudentExamsAndResults } from '@/components/student/StudentExamsAndResults';
 import { CodingProfilesCard } from '@/components/student/CodingProfilesCard';
@@ -155,7 +156,10 @@ export default function StudentPortalPage() {
       {/* 2. Own Success Score Circular Gauge (Encouraging tone, never shaming) */}
       <StudentScoreGauge dossier={dossier} />
 
-      {/* 3. "How to Improve" High-ROI Sensitivity Action Plan */}
+      {/* 3. AI Placement Risk Predictor (Trained ML Model with Real-Time Work Adaptation) */}
+      <PlacementRiskCard regNo={dossier.reg_no} studentName={dossier.full_name} />
+
+      {/* 4. "How to Improve" High-ROI Sensitivity Action Plan */}
       <HowToImprovePlan dossier={dossier} actions={actions} />
 
       {/* 4. The 7 Success Indicators & Constructive Focus Areas */}

@@ -1,0 +1,156 @@
+{
+  "model_name": "PlacementRiskLogisticClassifier",
+  "version": "1.0.0",
+  "trained_at": "2026-10-09T18:37:55.207Z",
+  "dataset_source": "students_complete_master_dataset.csv",
+  "samples_count": 120,
+  "feature_keys": [
+    "CGPA",
+    "Active_Backlogs",
+    "Avg_CIE_Marks",
+    "Attendance_Percentage",
+    "LMS_Completion_Percentage",
+    "Certifications_Count",
+    "Hackathons_Count",
+    "Placement_Aptitude_Score",
+    "Technical_Coding_Score",
+    "Mock_Interview_Score",
+    "Programming_Skill",
+    "Communication_Skill"
+  ],
+  "means": [
+    8.064083333333334,
+    0.44166666666666665,
+    7.908333333333333,
+    82.99166666666666,
+    84.16666666666667,
+    2.1166666666666667,
+    1.25,
+    79.27083333333333,
+    79.125,
+    80.53333333333333,
+    7.550833333333343,
+    6.925
+  ],
+  "stds": [
+    1.131988291925122,
+    1.167588921191396,
+    1.4965840734448863,
+    11.810656087712578,
+    20.128062223892517,
+    1.0660154261964925,
+    0.82915619758885,
+    13.539586378673297,
+    14.625641011593304,
+    15.904366975421839,
+    1.2937668410068683,
+    1.208735565236113
+  ],
+  "weights": [
+    -0.09314728254706042,
+    0.9724723097746385,
+    -0.3101614187209065,
+    -0.22526457649119871,
+    -0.1021375214954172,
+    -0.0456579409572788,
+    0.362828081465777,
+    -0.1894299069941507,
+    -0.30470182823181124,
+    -0.39469829500249987,
+    -0.4092802259849675,
+    -0.5654671620175638
+  ],
+  "bias": -3.4947175069950456,
+  "metrics": {
+    "accuracy_pct": 100,
+    "precision_pct": 100,
+    "recall_pct": 100,
+    "f1_score_pct": 100
+  },
+  "feature_importance": [
+    {
+      "feature": "Active_Backlogs",
+      "weight": 0.9725,
+      "mean": 0.44,
+      "std": 1.17,
+      "impact": "Increases Risk"
+    },
+    {
+      "feature": "Communication_Skill",
+      "weight": -0.5655,
+      "mean": 6.92,
+      "std": 1.21,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "Programming_Skill",
+      "weight": -0.4093,
+      "mean": 7.55,
+      "std": 1.29,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "Mock_Interview_Score",
+      "weight": -0.3947,
+      "mean": 80.53,
+      "std": 15.9,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "Hackathons_Count",
+      "weight": 0.3628,
+      "mean": 1.25,
+      "std": 0.83,
+      "impact": "Increases Risk"
+    },
+    {
+      "feature": "Avg_CIE_Marks",
+      "weight": -0.3102,
+      "mean": 7.91,
+      "std": 1.5,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "Technical_Coding_Score",
+      "weight": -0.3047,
+      "mean": 79.13,
+      "std": 14.63,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "Attendance_Percentage",
+      "weight": -0.2253,
+      "mean": 82.99,
+      "std": 11.81,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "Placement_Aptitude_Score",
+      "weight": -0.1894,
+      "mean": 79.27,
+      "std": 13.54,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "LMS_Completion_Percentage",
+      "weight": -0.1021,
+      "mean": 84.17,
+      "std": 20.13,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "CGPA",
+      "weight": -0.0931,
+      "mean": 8.06,
+      "std": 1.13,
+      "impact": "Decreases Risk (Protective)"
+    },
+    {
+      "feature": "Certifications_Count",
+      "weight": -0.0457,
+      "mean": 2.12,
+      "std": 1.07,
+      "impact": "Decreases Risk (Protective)"
+    }
+  ]
+}
