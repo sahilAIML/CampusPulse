@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 :root {
-  /* Warm Off-White Tactile Canvas Palette */
-  --clay-bg: #EEF1F6;
-  --clay-card: #EEF1F6;
-  --clay-pressed: #E4E9F1;
-  --clay-border: rgba(255, 255, 255, 0.6);
+  /* Warm Off-White Tactile Canvas Palette (Calibrated for HD video background) */
+  --clay-bg: rgba(238, 241, 246, 0.55);
+  --clay-card: rgba(238, 241, 246, 0.88);
+  --clay-pressed: rgba(228, 233, 241, 0.85);
+  --clay-border: rgba(255, 255, 255, 0.7);
   --clay-text: #2D3748;
   --clay-muted: #718096;
 
@@ -65,11 +65,11 @@
 }
 
 .dark {
-  /* Dark Clay Theme */
-  --clay-bg: #1A1E29;
-  --clay-card: #202634;
-  --clay-pressed: #171B24;
-  --clay-border: rgba(255, 255, 255, 0.08);
+  /* Dark Clay Theme (Calibrated for HD video background) */
+  --clay-bg: rgba(26, 30, 41, 0.65);
+  --clay-card: rgba(32, 38, 52, 0.88);
+  --clay-pressed: rgba(23, 27, 36, 0.85);
+  --clay-border: rgba(255, 255, 255, 0.12);
   --clay-text: #EDF2F7;
   --clay-muted: #A0AEC0;
 

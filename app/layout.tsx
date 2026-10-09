@@ -41,7 +41,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${oxanium.variable} font-sans scroll-smooth`}>
-      <body className="min-h-screen bg-[var(--clay-bg)] text-[var(--clay-text)] antialiased transition-colors duration-300 font-sans">
+      <body className="min-h-screen text-[var(--clay-text)] antialiased transition-colors duration-300 font-sans relative">
+        {/* Full-screen HD Background Animation Video */}
+        <div
+          className="fixed inset-0 pointer-events-none -z-50 overflow-hidden"
+          aria-hidden="true"
+        >
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover filter brightness-[0.96] contrast-[1.04]"
+            src="/Bytexl.mp4"
+          />
+          {/* Subtle light/dark frosted overlay for maximum text contrast */}
+          <div className="absolute inset-0 bg-[#EEF1F6]/55 dark:bg-[#1A1E29]/65 backdrop-blur-[1px]" />
+        </div>
+
         {children}
         <CampusPulseChatbot />
       </body>
