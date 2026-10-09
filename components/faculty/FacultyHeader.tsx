@@ -5,6 +5,7 @@ import { Search, Sparkles, User, AlertTriangle, ArrowRight, X } from 'lucide-rea
 import { ClayInput } from '../ui/ClayInput';
 import { ClayBadge } from '../ui/ClayBadge';
 import { StudentListItem } from '@/lib/data/students';
+import { getSessionUser } from '@/lib/data/auth';
 
 interface FacultyHeaderProps {
   currentSection: 'A' | 'B' | 'C' | 'all';
@@ -22,6 +23,10 @@ export function FacultyHeader({
   const [searchQuery, setSearchQuery] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
   const searchContainerRef = useRef<HTMLDivElement>(null);
+
+  const user = getSessionUser();
+  const displayName = user?.full_name || 'Dr. K.V. Krishna Kishore';
+  const displayId = user?.reg_no || 'CSE_001';
 
   // Dynamic greeting based on current local hour
   const getGreeting = () => {
@@ -60,7 +65,7 @@ export function FacultyHeader({
           <ClayBadge variant="teal" size="sm">Active Term: Sem V</ClayBadge>
         </div>
         <h1 className="text-2xl sm:text-3xl font-extrabold font-heading text-[var(--clay-text)] tracking-tight">
-          Prof. Ananya Sharma <span className="text-xs font-bold text-[var(--clay-muted)] font-normal">(FAC210)</span>
+          {displayName} <span className="text-xs font-bold text-[var(--clay-muted)] font-normal">({displayId})</span>
         </h1>
 
         {/* Section Tabs (Clay Pill Toggles, Active = Pressed) */}

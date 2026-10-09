@@ -42,9 +42,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${oxanium.variable} font-sans scroll-smooth`}>
       <body className="min-h-screen text-[var(--clay-text)] antialiased transition-colors duration-300 font-sans relative">
-        {/* Full-screen HD Background Animation Video */}
+        {/* Full-screen HD Background Animation Video (Edge-to-Edge Big Coverage) */}
         <div
-          className="fixed inset-0 pointer-events-none -z-50 overflow-hidden"
+          className="fixed inset-0 w-screen h-screen min-w-full min-h-full pointer-events-none -z-50 overflow-hidden"
           aria-hidden="true"
         >
           <video
@@ -52,11 +52,11 @@ export default function RootLayout({
             loop
             muted
             playsInline
-            className="w-full h-full object-cover filter brightness-[0.96] contrast-[1.04]"
-            src="/Bytexl.mp4"
+            className="w-full h-full min-w-full min-h-full object-cover scale-[1.01] filter brightness-[0.88] contrast-[1.12] saturate-[1.05]"
+            src="/video-project-4.mp4"
           />
-          {/* Subtle light/dark frosted overlay for maximum text contrast */}
-          <div className="absolute inset-0 bg-[#EEF1F6]/55 dark:bg-[#1A1E29]/65 backdrop-blur-[1px]" />
+          {/* High-Contrast Frosted Scrim: Balances HD video motion with maximum text and card contrast */}
+          <div className="absolute inset-0 bg-black/40 dark:bg-black/65 backdrop-blur-[1px] pointer-events-none" />
         </div>
 
         {children}

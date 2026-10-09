@@ -17,12 +17,12 @@ export async function loginUser(
   const normEmail = email.toLowerCase().trim();
 
   // Authenticate registered institutional directory credentials
-  if (!isSupabaseConfigured() || normEmail.includes('campus.edu.in') || normEmail.includes('college.edu.in')) {
+  if (!isSupabaseConfigured() || normEmail.includes('vignan.ac.in') || normEmail.includes('campus.edu.in') || normEmail.includes('college.edu.in')) {
     if (normEmail.includes('admin')) {
       saveSessionUser(MOCK_AUTH_USERS.admin);
       return MOCK_AUTH_USERS.admin;
     }
-    if (normEmail.includes('faculty') || normEmail.includes('ananya')) {
+    if (normEmail.includes('faculty') || normEmail.includes('krishna') || normEmail.includes('kishore') || normEmail.includes('cse_') || normEmail.includes('vignan.ac.in') || normEmail.includes('ananya')) {
       saveSessionUser(MOCK_AUTH_USERS.faculty);
       return MOCK_AUTH_USERS.faculty;
     }

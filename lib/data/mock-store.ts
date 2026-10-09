@@ -168,12 +168,12 @@ export const MOCK_AUTH_USERS: Record<string, AuthUser> = {
   },
   faculty: {
     id: 'f0000000-0000-0000-0000-000000000001',
-    email: 'ananya.sharma@campus.edu.in',
-    full_name: 'Prof. Ananya Sharma',
+    email: 'k.v.krishna.kishore@vignan.ac.in',
+    full_name: 'Dr. K.V. Krishna Kishore',
     role: 'faculty',
-    reg_no: 'FAC210',
+    reg_no: 'CSE_001',
     section: 'Section A (CSE Year 3)',
-    avatar_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150',
+    avatar_url: 'https://vignan.ac.in/Facultyprofiles/uploads/163/profilepic163.png',
   },
   student_sahil: {
     id: 'u0000000-0000-0000-0000-000000000067',

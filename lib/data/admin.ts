@@ -16,14 +16,21 @@ import {
 import { getSectionStudents, getStudentDetail, StudentDetail } from './students';
 import { MOCK_ANNOUNCEMENTS, MOCK_PLACEMENTS } from './mock-store';
 import { Announcement, PlacementRecord } from './types';
+import vignanFacultyJson from './vignan_faculty.json';
 
 // ----------------------------------------------------------------------------
-// FACULTY PROFILES DATA
+// FACULTY PROFILES DATA (Vignan CSE Official Dataset - 123 Records)
 // ----------------------------------------------------------------------------
 export interface FacultyProfile {
-  reg_no: string; // e.g. FAC210
+  faculty_id: string; // e.g. CSE_001
+  reg_no: string; // e.g. CSE_001
   full_name: string;
   department: string;
+  designation: string;
+  research_interests: string;
+  photo_url: string;
+  profile_url: string;
+  source?: string;
   assigned_sections: string[];
   attendance_pct: number;
   workload_hours_per_week: number;
@@ -81,58 +88,27 @@ export interface AdminUser {
   created_at: string;
 }
 
-// In-Memory Faculty Directory
-const MOCK_FACULTY_PROFILES: Record<string, FacultyProfile> = {
-  'FAC210': {
+// In-Memory Faculty Directory populated from Official Vignan CSE Dataset
+const MOCK_FACULTY_PROFILES: Record<string, FacultyProfile> = {};
+
+(vignanFacultyJson as FacultyProfile[]).forEach((fac) => {
+  MOCK_FACULTY_PROFILES[fac.faculty_id] = fac;
+  MOCK_FACULTY_PROFILES[fac.reg_no] = fac;
+});
+
+// Backward-compatible aliases for existing FAC210 and FAC204 links
+if (MOCK_FACULTY_PROFILES['CSE_001']) {
+  MOCK_FACULTY_PROFILES['FAC210'] = {
+    ...MOCK_FACULTY_PROFILES['CSE_001'],
     reg_no: 'FAC210',
-    full_name: 'Prof. Ananya Sharma',
-    department: 'Computer Science & Engineering',
-    assigned_sections: ['Section A', 'Section B'],
-    attendance_pct: 96.5,
-    workload_hours_per_week: 18,
-    courses_taught: [
-      'Data Structures & Algorithms (CS301)',
-      'Operating Systems Architecture (CS304)',
-      'Algorithmic Problem Solving Clinic',
-    ],
-    email: 'ananya.sharma@campuspulse.edu',
-    avatar_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150',
-    office_location: 'Academic Block 3, Room 308',
-    cabin_hours: 'Tue/Thu 14:00 - 16:00',
-  },
-  'FAC204': {
+  };
+}
+if (MOCK_FACULTY_PROFILES['CSE_002']) {
+  MOCK_FACULTY_PROFILES['FAC204'] = {
+    ...MOCK_FACULTY_PROFILES['CSE_002'],
     reg_no: 'FAC204',
-    full_name: 'Prof. Rajesh Kumar',
-    department: 'Computer Science & Engineering',
-    assigned_sections: ['Section C'],
-    attendance_pct: 94.0,
-    workload_hours_per_week: 16,
-    courses_taught: [
-      'Database Management Systems (CS302)',
-      'Computer Networks & Protocols (CS305)',
-    ],
-    email: 'rajesh.kumar@campuspulse.edu',
-    avatar_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150',
-    office_location: 'Academic Block 3, Room 312',
-    cabin_hours: 'Mon/Wed 15:00 - 17:00',
-  },
-  'FAC312': {
-    reg_no: 'FAC312',
-    full_name: 'Dr. Vikram Sengupta',
-    department: 'AI & Data Science',
-    assigned_sections: ['Section A'],
-    attendance_pct: 98.0,
-    workload_hours_per_week: 14,
-    courses_taught: [
-      'Foundations of Machine Learning (AI301)',
-      'Applied Probability & Stochastic Modeling (AI303)',
-    ],
-    email: 'vikram.sengupta@campuspulse.edu',
-    avatar_url: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
-    office_location: 'AI Research Tower, Cabin 402',
-    cabin_hours: 'Fri 10:00 - 13:00',
-  },
-};
+  };
+}
 
 // In-Memory Users Directory
 let MOCK_USERS_STORE: AdminUser[] = [
@@ -146,20 +122,29 @@ let MOCK_USERS_STORE: AdminUser[] = [
     created_at: '2026-01-15T08:00:00Z',
   },
   {
-    id: 'usr-2',
-    email: 'ananya.sharma@campuspulse.edu',
-    full_name: 'Prof. Ananya Sharma',
+    id: 'usr-fac-1',
+    email: 'k.v.krishna.kishore@vignan.ac.in',
+    full_name: 'Dr. K.V. Krishna Kishore',
     role: 'faculty',
-    reg_no: 'FAC210',
+    reg_no: 'CSE_001',
     status: 'active',
     created_at: '2026-02-01T09:30:00Z',
   },
   {
-    id: 'usr-3',
-    email: 'rajesh.kumar@campuspulse.edu',
-    full_name: 'Prof. Rajesh Kumar',
+    id: 'usr-fac-2',
+    email: 'venkatrama.phani.kumar.s@vignan.ac.in',
+    full_name: 'Dr. Venkatrama Phani Kumar S',
     role: 'faculty',
-    reg_no: 'FAC204',
+    reg_no: 'CSE_002',
+    status: 'active',
+    created_at: '2026-02-01T09:30:00Z',
+  },
+  {
+    id: 'usr-fac-3',
+    email: 'balakrishna.kethineni@vignan.ac.in',
+    full_name: 'Dr. Balakrishna Kethineni',
+    role: 'faculty',
+    reg_no: 'CSE_003',
     status: 'active',
     created_at: '2026-02-01T09:30:00Z',
   },
@@ -243,14 +228,23 @@ let adminPlacements: PlacementRecord[] = [...MOCK_PLACEMENTS];
 // 1. QUICK PROFILE LOOKUP (Faculty & Student)
 // ----------------------------------------------------------------------------
 
+export async function getAllFacultyProfiles(): Promise<FacultyProfile[]> {
+  return vignanFacultyJson as FacultyProfile[];
+}
+
 export async function lookupFacultyProfile(id: string): Promise<FacultyProfile | null> {
   const cleanId = id.trim().toUpperCase();
   const found = MOCK_FACULTY_PROFILES[cleanId];
   if (found) return found;
 
-  // Case-insensitive partial search
-  const match = Object.values(MOCK_FACULTY_PROFILES).find(
-    (f) => f.reg_no.toLowerCase() === cleanId.toLowerCase() || f.full_name.toLowerCase().includes(cleanId.toLowerCase())
+  // Case-insensitive partial search across all faculty
+  const all = Object.values(MOCK_FACULTY_PROFILES);
+  const match = all.find(
+    (f) =>
+      f.reg_no.toLowerCase() === cleanId.toLowerCase() ||
+      f.faculty_id.toLowerCase() === cleanId.toLowerCase() ||
+      f.full_name.toLowerCase().includes(cleanId.toLowerCase()) ||
+      (f.research_interests && f.research_interests.toLowerCase().includes(cleanId.toLowerCase()))
   );
   return match || null;
 }
@@ -281,7 +275,7 @@ export async function getDepartmentComparison(): Promise<DepartmentMetric[]> {
       department: 'Computer Science & Engineering',
       code: 'CSE',
       student_count: 120,
-      faculty_count: 14,
+      faculty_count: 123,
       avg_success_score: 79.4,
       placement_rate_pct: 88.5,
       at_risk_count: 5,

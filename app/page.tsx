@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { ArrowRight, Sparkles, LogIn, ChevronDown, CheckCircle2, ShieldAlert } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { ClayScene } from '@/components/hero/ClayScene';
+import { BlockPuzzleSimulation } from '@/components/hero/BlockPuzzleSimulation';
 import { StatChips } from '@/components/hero/StatChips';
 import { AnnouncementsSection } from '@/components/announcements/AnnouncementsSection';
 import { PlacementsSection } from '@/components/placements/PlacementsSection';
@@ -78,15 +78,15 @@ export default function LandingPage() {
                 </div>
 
                 {/* Bold Headline */}
-                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-[var(--clay-text)] tracking-tight leading-[1.15] mb-5">
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-[1.15] mb-5 drop-shadow-[0_3px_14px_rgba(0,0,0,0.85)]">
                   Transform student data into{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7A59] via-[#2EC4B6] to-[#5B6CFF]">
+                  <span className="text-white font-black drop-shadow-[0_3px_16px_rgba(0,0,0,0.95)]">
                     actionable intelligence.
                   </span>
                 </h1>
 
                 {/* One-Line Value Statement */}
-                <p className="text-base sm:text-lg md:text-xl text-[var(--clay-muted)] font-medium max-w-2xl leading-relaxed mb-8">
+                <p className="text-base sm:text-lg md:text-xl text-white/95 font-medium max-w-2xl leading-relaxed mb-8 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                   CampusPulse bridges fragmented SIS records, biometric attendance, and CIE marks into explainable early-warning indicators and targeted interventions for faculty and administrators.
                 </p>
 
@@ -114,7 +114,7 @@ export default function LandingPage() {
                 </div>
 
                 {/* Quick Trust Highlights */}
-                <div className="mt-8 pt-6 border-t border-[var(--clay-border)] flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-xs font-bold text-[var(--clay-muted)]">
+                <div className="mt-8 pt-6 border-t border-white/20 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-xs font-bold text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.7)]">
                   <span className="flex items-center gap-1.5">
                     <CheckCircle2 className="h-4 w-4 text-[#2EC4B6]" />
                     100% Explainable Scores (0-100)
@@ -130,9 +130,9 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Right Column: Signature Animated Clay Scene */}
+              {/* Right Column: Smooth Block Puzzle Gameplay Simulation */}
               <div className="lg:col-span-5 w-full flex justify-center">
-                <ClayScene />
+                <BlockPuzzleSimulation />
               </div>
             </div>
           </div>

@@ -43,7 +43,8 @@ WEBSITE ROADMAP & SECTIONS:
 
 4. Admin Governance Portal (/admin):
    - Institutional Dashboard: Department comparisons, cross-section risk heatmaps, placement trend forecasts.
-   - Profile Lookup: Inspect any Student Profile (e.g., 241FA18067, 241FA04070) or Faculty Profile (e.g., FAC210).
+   - Faculty Directory: 123 verified Vignan CSE faculty profiles with designations, research specializations, official portal links, and dossiers.
+   - Profile Lookup: Inspect any Student Profile (e.g., 241FA18067, 241FA04070) or Faculty Profile (e.g., CSE_001, CSE_002, CSE_123).
    - Score Weight Tuner: Adjust indicator weights with live recalculation preview.
    - CSV Import Engine: Batch student data upload with validation checks.
    - User Management: Role privileges and directory.
@@ -56,7 +57,8 @@ OFFICIAL VERIFIED LOGIN CREDENTIALS:
   * SAGAR (Section B): Email: 241fa04070@college.edu.in | Password: Password@123 | Reg No: 241FA04070
   * Any other student in batch of 120: [reg_no]@college.edu.in | Password: Password@123
 - Faculty Account:
-  * Prof. Ananya Sharma: Email: ananya.sharma@campus.edu.in | Password: Password@123 | Reg No: FAC210 (Section A Mentor)
+  * Dr. K.V. Krishna Kishore: Email: k.v.krishna.kishore@vignan.ac.in (or faculty@campus.edu.in) | Password: Password@123 | Reg No: CSE_001 (Professor & Mentor)
+  * Any of the 123 Vignan CSE faculty members: [faculty_id]@vignan.ac.in
 - Admin Account:
   * Dr. K. Ramanathan: Email: admin@campus.edu.in | Password: Password@123
 

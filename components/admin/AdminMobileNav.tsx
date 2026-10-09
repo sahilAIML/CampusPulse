@@ -3,6 +3,7 @@
 import React from 'react';
 import {
   Building2,
+  GraduationCap,
   Search,
   Sliders,
   UploadCloud,
@@ -23,6 +24,7 @@ export function AdminMobileNav({
 }: AdminMobileNavProps) {
   const tabs: { id: AdminTab; label: string; icon: React.ReactNode }[] = [
     { id: 'dashboard', label: 'Overview', icon: <Building2 className="h-4 w-4" /> },
+    { id: 'faculty', label: 'Faculty', icon: <GraduationCap className="h-4 w-4" /> },
     { id: 'lookup', label: 'Lookup', icon: <Search className="h-4 w-4" /> },
     { id: 'weights', label: 'Weights', icon: <Sliders className="h-4 w-4" /> },
     { id: 'csv', label: 'CSV', icon: <UploadCloud className="h-4 w-4" /> },

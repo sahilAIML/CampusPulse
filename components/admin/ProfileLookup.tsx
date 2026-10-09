@@ -114,7 +114,7 @@ export function ProfileLookup() {
               type="button"
               onClick={() => {
                 setRoleMode('faculty');
-                if (searchId === '241FA18067' || searchId === '241FA04070') setSearchId('FAC210');
+                if (searchId === '241FA18067' || searchId === '241FA04070') setSearchId('CSE_001');
               }}
               className={`px-4 py-1.5 rounded-xl font-heading font-extrabold text-xs transition-all ${
                 roleMode === 'faculty'
@@ -131,7 +131,7 @@ export function ProfileLookup() {
         <form onSubmit={handleLookup} className="flex flex-col sm:flex-row items-center gap-3">
           <div className="w-full flex-1">
             <ClayInput
-              placeholder={roleMode === 'student' ? 'Enter Reg No (e.g. 241FA18067)...' : 'Enter Faculty ID (e.g. FAC210)...'}
+              placeholder={roleMode === 'student' ? 'Enter Reg No (e.g. 241FA18067)...' : 'Enter Faculty ID (e.g. CSE_001) or Name...'}
               icon={<Search className="h-4 w-4" />}
               value={searchId}
               onChange={(e) => setSearchId(e.target.value)}
@@ -162,10 +162,17 @@ export function ProfileLookup() {
           </button>
           <button
             type="button"
-            onClick={() => handleQuickSelect('FAC210', 'faculty')}
+            onClick={() => handleQuickSelect('CSE_001', 'faculty')}
             className="px-2.5 py-1 rounded-xl bg-[var(--clay-pressed)] hover:bg-[#5B6CFF]/15 text-[var(--clay-text)] hover:text-[#5B6CFF] font-mono font-bold transition-all"
           >
-            FAC210 (Prof. Ananya Sharma)
+            CSE_001 (Dr. K.V. Krishna Kishore)
+          </button>
+          <button
+            type="button"
+            onClick={() => handleQuickSelect('CSE_002', 'faculty')}
+            className="px-2.5 py-1 rounded-xl bg-[var(--clay-pressed)] hover:bg-[#2EC4B6]/15 text-[var(--clay-text)] hover:text-[#2EC4B6] font-mono font-bold transition-all"
+          >
+            CSE_002 (Dr. Venkatrama Phani Kumar)
           </button>
         </div>
       </ClayCard>
@@ -360,23 +367,36 @@ export function ProfileLookup() {
               {/* Header Bar */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-[var(--clay-border)]">
                 <div className="flex items-center gap-4">
-                  <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-[#2EC4B6] to-[#1BA89B] text-white flex items-center justify-center font-heading font-black text-2xl shadow-[var(--shadow-clay-teal)]">
-                    {facultyResult.full_name.split(' ')[1]?.charAt(0) || 'F'}
+                  <div className="relative h-16 w-16 rounded-2xl overflow-hidden bg-[var(--clay-pressed)] border border-[var(--clay-border)] flex-shrink-0 shadow-[var(--shadow-clay-badge)]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={facultyResult.photo_url || facultyResult.avatar_url}
+                      alt={facultyResult.full_name}
+                      className="h-full w-full object-cover"
+                      onError={(e) => {
+                        (e.target as HTMLElement).style.display = 'none';
+                      }}
+                    />
+                    <div className="h-full w-full flex items-center justify-center font-heading font-black text-2xl text-white bg-gradient-to-br from-[#2EC4B6] to-[#1BA89B]">
+                      {facultyResult.full_name.charAt(0)}
+                    </div>
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <h3 className="font-heading font-extrabold text-2xl text-[var(--clay-text)]">
                         {facultyResult.full_name}
                       </h3>
-                      <ClayBadge variant="teal" size="sm">Active Faculty</ClayBadge>
+                      <ClayBadge variant="coral" size="sm">
+                        {facultyResult.designation || 'Active Faculty'}
+                      </ClayBadge>
                     </div>
                     <span className="font-mono text-xs font-bold text-[var(--clay-muted)]">
-                      Faculty ID: <strong className="text-[var(--clay-text)]">{facultyResult.reg_no}</strong> • {facultyResult.department}
+                      Faculty ID: <strong className="text-[var(--clay-text)]">{facultyResult.faculty_id || facultyResult.reg_no}</strong> • {facultyResult.department}
                     </span>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:text-right text-xs text-[var(--clay-muted)] font-semibold">
+                <div className="flex flex-col gap-2 sm:text-right text-xs text-[var(--clay-muted)] font-semibold">
                   <div className="flex items-center sm:justify-end gap-1.5">
                     <MapPin className="h-3.5 w-3.5 text-[#FF7A59]" />
                     <span>{facultyResult.office_location}</span>
@@ -385,8 +405,31 @@ export function ProfileLookup() {
                     <Clock className="h-3.5 w-3.5 text-[#5B6CFF]" />
                     <span>Office Hours: {facultyResult.cabin_hours}</span>
                   </div>
+                  {facultyResult.profile_url && (
+                    <a
+                      href={facultyResult.profile_url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center sm:justify-end gap-1 text-[11px] font-bold text-[#FF7A59] hover:underline"
+                    >
+                      <span>Vignan Official Profile</span>
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  )}
                 </div>
               </div>
+
+              {/* Research Specializations */}
+              {facultyResult.research_interests && (
+                <div className="p-4 rounded-2xl bg-[#5B6CFF]/10 border border-[#5B6CFF]/30 space-y-1">
+                  <span className="text-[10px] font-heading font-extrabold text-[#5B6CFF] uppercase tracking-wider block">
+                    Research Specializations
+                  </span>
+                  <p className="text-xs text-[var(--clay-text)] font-semibold">
+                    {facultyResult.research_interests}
+                  </p>
+                </div>
+              )}
 
               {/* Faculty Telemetry Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
@@ -409,9 +452,9 @@ export function ProfileLookup() {
                   </span>
                 </div>
                 <div className="p-3.5 rounded-2xl bg-[var(--clay-card)] border border-[var(--clay-border)] shadow-[var(--shadow-clay-badge)]">
-                  <span className="text-[10px] font-bold text-[var(--clay-muted)] uppercase block">Direct Mentorship</span>
-                  <span className="font-heading font-black text-xl text-[#FF7A59] tabular-nums">
-                    40 Students
+                  <span className="text-[10px] font-bold text-[var(--clay-muted)] uppercase block">Official Email</span>
+                  <span className="font-mono font-bold text-xs text-[#FF7A59] block mt-1 truncate">
+                    {facultyResult.email}
                   </span>
                 </div>
               </div>

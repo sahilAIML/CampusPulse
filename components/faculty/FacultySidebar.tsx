@@ -15,7 +15,7 @@ import {
   User,
   ShieldCheck,
 } from 'lucide-react';
-import { logoutUser } from '@/lib/data/auth';
+import { logoutUser, getSessionUser } from '@/lib/data/auth';
 
 interface FacultySidebarProps {
   activeTab?: string;
@@ -27,6 +27,10 @@ export function FacultySidebar({
   onTabChange,
 }: FacultySidebarProps) {
   const router = useRouter();
+  const user = getSessionUser();
+  const fullName = user?.full_name || 'Dr. K.V. Krishna Kishore';
+  const regNo = user?.reg_no || 'CSE_001';
+  const avatarUrl = user?.avatar_url || 'https://vignan.ac.in/Facultyprofiles/uploads/163/profilepic163.png';
 
   const navItems = [
     { id: 'home', label: 'Home', icon: <LayoutDashboard className="h-5 w-5" /> },
@@ -88,15 +92,26 @@ export function FacultySidebar({
       <div className="pt-4 border-t border-[var(--clay-border)] space-y-3">
         {/* Faculty Profile Card */}
         <div className="p-3.5 rounded-2xl bg-[var(--clay-pressed)]/70 border border-[var(--clay-border)] flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-[#2EC4B6] text-white flex items-center justify-center font-heading font-extrabold shadow-[var(--shadow-clay-teal)] flex-shrink-0">
-            AS
+          <div className="relative h-10 w-10 rounded-xl overflow-hidden bg-[#2EC4B6] border border-[var(--clay-border)] flex items-center justify-center font-heading font-extrabold shadow-[var(--shadow-clay-teal)] flex-shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={avatarUrl}
+              alt={fullName}
+              className="h-full w-full object-cover"
+              onError={(e) => {
+                (e.target as HTMLElement).style.display = 'none';
+              }}
+            />
+            <div className="h-full w-full flex items-center justify-center text-white font-bold bg-[#2EC4B6]">
+              {fullName.charAt(0)}
+            </div>
           </div>
           <div className="flex-1 min-w-0">
             <span className="font-heading font-extrabold text-xs text-[var(--clay-text)] block truncate">
-              Prof. Ananya Sharma
+              {fullName}
             </span>
             <span className="text-[11px] font-semibold text-[#2EC4B6] block truncate">
-              FAC210 • Sec A Mentor
+              {regNo} • Sec A Mentor
             </span>
           </div>
         </div>

@@ -21,6 +21,7 @@ import { logoutUser } from '@/lib/data/auth';
 
 export type AdminTab =
   | 'dashboard'
+  | 'faculty'
   | 'lookup'
   | 'weights'
   | 'csv'
@@ -44,6 +45,12 @@ export function AdminSidebar({
       id: 'dashboard',
       label: 'Institutional Overview',
       icon: <Building2 className="h-5 w-5" />,
+    },
+    {
+      id: 'faculty',
+      label: 'Faculty Directory',
+      icon: <GraduationCap className="h-5 w-5" />,
+      badge: '123 Roster',
     },
     {
       id: 'lookup',

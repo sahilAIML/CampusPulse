@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root {
-  /* Warm Off-White Tactile Canvas Palette (Calibrated for HD video background) */
-  --clay-bg: rgba(238, 241, 246, 0.55);
-  --clay-card: rgba(238, 241, 246, 0.88);
-  --clay-pressed: rgba(228, 233, 241, 0.85);
-  --clay-border: rgba(255, 255, 255, 0.7);
-  --clay-text: #2D3748;
-  --clay-muted: #718096;
+  /* Transparent canvas so the HD video fills the full screen edge-to-edge */
+  --clay-bg: transparent;
+  --clay-card: rgba(244, 247, 252, 0.94);
+  --clay-pressed: rgba(228, 233, 241, 0.92);
+  --clay-border: rgba(255, 255, 255, 0.85);
+  --clay-text: #0F172A;
+  --clay-muted: #334155;
 
   /* Double Shadows: Outer Drop + Inner Specular Highlight + Inner Shade */
   --shadow-clay-card: 12px 12px 24px rgba(163, 177, 198, 0.45),
@@ -65,13 +65,13 @@
 }
 
 .dark {
-  /* Dark Clay Theme (Calibrated for HD video background) */
-  --clay-bg: rgba(26, 30, 41, 0.65);
-  --clay-card: rgba(32, 38, 52, 0.88);
-  --clay-pressed: rgba(23, 27, 36, 0.85);
-  --clay-border: rgba(255, 255, 255, 0.12);
-  --clay-text: #EDF2F7;
-  --clay-muted: #A0AEC0;
+  /* Dark Canvas with full HD video visibility */
+  --clay-bg: transparent;
+  --clay-card: rgba(17, 24, 39, 0.93);
+  --clay-pressed: rgba(15, 20, 32, 0.92);
+  --clay-border: rgba(255, 255, 255, 0.18);
+  --clay-text: #F8FAFC;
+  --clay-muted: #E2E8F0;
 
   --shadow-clay-card: 10px 10px 22px rgba(10, 13, 18, 0.65),
                       -6px -6px 16px rgba(44, 52, 70, 0.4),
@@ -135,6 +135,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-oxanium), 'Oxanium', monospace, sans-serif;
   letter-spacing: -0.01em;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 input, button, select, textarea {

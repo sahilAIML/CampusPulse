@@ -21,6 +21,7 @@ import { AdminSidebar, AdminTab } from '@/components/admin/AdminSidebar';
 import { AdminMobileNav } from '@/components/admin/AdminMobileNav';
 import { InstitutionalDashboard } from '@/components/admin/InstitutionalDashboard';
 import { ProfileLookup } from '@/components/admin/ProfileLookup';
+import { FacultyDirectory } from '@/components/admin/FacultyDirectory';
 import { WeightTuner } from '@/components/admin/WeightTuner';
 import { CSVImporter } from '@/components/admin/CSVImporter';
 import { UserManagement } from '@/components/admin/UserManagement';
@@ -137,6 +138,7 @@ export default function AdminPage() {
               </span>
               <span className="text-xs font-heading font-extrabold text-[#FF7A59] bg-[#FF7A59]/10 px-2.5 py-0.5 rounded-xl border border-[#FF7A59]/20">
                 {activeTab === 'dashboard' && 'Institutional Dashboard & Heatmap'}
+                {activeTab === 'faculty' && 'Faculty Directory (123 CSE Profiles)'}
                 {activeTab === 'lookup' && 'Profile Lookup (Faculty & Student)'}
                 {activeTab === 'weights' && 'Score Weight Tuning & Recomputation'}
                 {activeTab === 'csv' && 'CSV Import Engine & Validation Report'}
@@ -156,6 +158,7 @@ export default function AdminPage() {
         {/* 3. Sub-View Modules */}
         <section className="flex-1 w-full space-y-6">
           {activeTab === 'dashboard' && <InstitutionalDashboard />}
+          {activeTab === 'faculty' && <FacultyDirectory />}
           {activeTab === 'lookup' && <ProfileLookup />}
           {activeTab === 'weights' && <WeightTuner />}
           {activeTab === 'csv' && <CSVImporter />}

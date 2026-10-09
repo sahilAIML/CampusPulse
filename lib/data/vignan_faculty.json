@@ -1,0 +1,3005 @@
+[
+  {
+    "faculty_id": "CSE_001",
+    "reg_no": "CSE_001",
+    "full_name": "Dr. K.V. Krishna Kishore",
+    "designation": "Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; Neural Networks; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/163/profilepic163.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 14,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-493)",
+      "Neural Networks (Specialization CS-297)",
+      "Deep Learning (Specialization CS-163)"
+    ],
+    "email": "k.v.krishna.kishore@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/163/profilepic163.png",
+    "office_location": "Vashishta Research Complex, Cabin 202",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_002",
+    "reg_no": "CSE_002",
+    "full_name": "Dr. Venkatrama Phani Kumar S",
+    "designation": "Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning Algorithms and Applications; Text Mining & Analytics",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/675/profilepic675.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 14,
+    "courses_taught": [
+      "Machine Learning Algorithms and Applications (Specialization CS-381)",
+      "Text Mining & Analytics (Specialization CS-291)"
+    ],
+    "email": "venkatrama.phani.kumar.s@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/675/profilepic675.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 203",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_003",
+    "reg_no": "CSE_003",
+    "full_name": "Dr. Balakrishna Kethineni",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Electrical Automation; Electrical Systems Protection; Building Electrical Automation",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/816/profilepic816.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "Electrical Automation (Specialization CS-172)",
+      "Electrical Systems Protection (Specialization CS-406)",
+      "Building Electrical Automation (Specialization CS-297)"
+    ],
+    "email": "balakrishna.kethineni@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/816/profilepic816.JPG",
+    "office_location": "Vashishta Research Complex, Cabin 204",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_004",
+    "reg_no": "CSE_004",
+    "full_name": "Dr. D. Yakobu",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Cloud Computing; Network Security; Software Engineering",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/714/profilepic714.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "Cloud Computing (Specialization CS-449)",
+      "Network Security (Specialization CS-408)",
+      "Software Engineering (Specialization CS-295)"
+    ],
+    "email": "d.yakobu@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/714/profilepic714.png",
+    "office_location": "Aryabhata Academic Block, Cabin 205",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_005",
+    "reg_no": "CSE_005",
+    "full_name": "Dr. K Rachananjali",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Multilevel converters; Renewable energy systems; Electric vehicles",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/918/profilepic918.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "Multilevel converters (Specialization CS-331)",
+      "Renewable energy systems (Specialization CS-373)",
+      "Electric vehicles (Specialization CS-437)"
+    ],
+    "email": "k.rachananjali@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/918/profilepic918.JPG",
+    "office_location": "Vashishta Research Complex, Cabin 206",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_006",
+    "reg_no": "CSE_006",
+    "full_name": "Dr. M Umadevi",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Document forensics; Image Processing; Machine Learning; LLM; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02342/profilepic02342.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "Document forensics (Specialization CS-279)",
+      "Image Processing (Specialization CS-204)",
+      "Machine Learning (Specialization CS-428)"
+    ],
+    "email": "m.umadevi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02342/profilepic02342.png",
+    "office_location": "Aryabhata Academic Block, Cabin 207",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_007",
+    "reg_no": "CSE_007",
+    "full_name": "Dr. P.Siva Prasad",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Algebra; Machine Learning; Deep learning; Cryptography",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01429/profilepic01429.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "Algebra (Specialization CS-166)",
+      "Machine Learning (Specialization CS-204)",
+      "Deep learning (Specialization CS-408)"
+    ],
+    "email": "p.siva.prasad@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01429/profilepic01429.png",
+    "office_location": "Vashishta Research Complex, Cabin 208",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_008",
+    "reg_no": "CSE_008",
+    "full_name": "Dr. Prashant Upadhyay",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Digital Image Processing; VLSI and Embedded Systems",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02462/profilepic02462.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "Digital Image Processing (Specialization CS-189)",
+      "VLSI and Embedded Systems (Specialization CS-369)"
+    ],
+    "email": "prashant.upadhyay@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02462/profilepic02462.png",
+    "office_location": "Aryabhata Academic Block, Cabin 209",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_009",
+    "reg_no": "CSE_009",
+    "full_name": "Dr. R Prathap Kumar",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "VANET Security; MACHINE LEARNING",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/689/profilepic689.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "VANET Security (Specialization CS-219)",
+      "MACHINE LEARNING (Specialization CS-327)"
+    ],
+    "email": "r.prathap.kumar@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/689/profilepic689.webp",
+    "office_location": "Vashishta Research Complex, Cabin 210",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_010",
+    "reg_no": "CSE_010",
+    "full_name": "Dr. S.Deva Kumar",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Medical Image Processing; Machine Learning; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/189/profilepic189.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "Medical Image Processing (Specialization CS-225)",
+      "Machine Learning (Specialization CS-200)",
+      "Deep Learning (Specialization CS-360)"
+    ],
+    "email": "s.deva.kumar@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/189/profilepic189.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 211",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_011",
+    "reg_no": "CSE_011",
+    "full_name": "Dr. Siva Koteswararao Chinnam",
+    "designation": "Associate Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/195/profilepic195.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 16,
+    "courses_taught": [
+      "Deep Learning (Specialization CS-251)"
+    ],
+    "email": "siva.koteswararao.chinnam@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/195/profilepic195.JPG",
+    "office_location": "Vashishta Research Complex, Cabin 212",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_012",
+    "reg_no": "CSE_012",
+    "full_name": "Mr. .Kiran Kumar Kaveti",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Medical Image Processing; Machine Learning and Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03099/profilepic03099.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Medical Image Processing (Specialization CS-216)",
+      "Machine Learning and Deep Learning (Specialization CS-391)"
+    ],
+    "email": "kiran.kumar.kaveti@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03099/profilepic03099.jpeg",
+    "office_location": "Aryabhata Academic Block, Cabin 213",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_013",
+    "reg_no": "CSE_013",
+    "full_name": "Mr. Akhil Babu Edara",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; Network sensors; cloud Computing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03382/profilepic03382.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-106)",
+      "Network sensors (Specialization CS-343)",
+      "cloud Computing (Specialization CS-405)"
+    ],
+    "email": "akhil.babu.edara@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03382/profilepic03382.webp",
+    "office_location": "Vashishta Research Complex, Cabin 214",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_014",
+    "reg_no": "CSE_014",
+    "full_name": "Mr. Anil Babu Bathula",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Federated Learning; Cyber Security; Machine Learning; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03359/profilepic03359.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Federated Learning (Specialization CS-369)",
+      "Cyber Security (Specialization CS-221)",
+      "Machine Learning (Specialization CS-425)"
+    ],
+    "email": "anil.babu.bathula@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03359/profilepic03359.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 215",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_015",
+    "reg_no": "CSE_015",
+    "full_name": "Mr. Anil Madugula",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Artificial Intelligence and Deep Learning; Full Stack Development + AI",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02394/profilepic02394.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Artificial Intelligence and Deep Learning (Specialization CS-487)",
+      "Full Stack Development + AI (Specialization CS-466)"
+    ],
+    "email": "anil.madugula@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02394/profilepic02394.png",
+    "office_location": "Vashishta Research Complex, Cabin 216",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_016",
+    "reg_no": "CSE_016",
+    "full_name": "Mrs. Anusha Kakumanu",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Deep learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01920/profilepic01920.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Deep learning (Specialization CS-122)"
+    ],
+    "email": "anusha.kakumanu@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01920/profilepic01920.png",
+    "office_location": "Aryabhata Academic Block, Cabin 217",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_017",
+    "reg_no": "CSE_017",
+    "full_name": "Mrs. Anusha Viswanadapalli",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Federated Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/613/profilepic613.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Federated Learning (Specialization CS-212)"
+    ],
+    "email": "anusha.viswanadapalli@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/613/profilepic613.png",
+    "office_location": "Vashishta Research Complex, Cabin 218",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_018",
+    "reg_no": "CSE_018",
+    "full_name": "Mrs. B Suvarna",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Recommender Systems",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03045/profilepic03045.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Recommender Systems (Specialization CS-300)"
+    ],
+    "email": "b.suvarna@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03045/profilepic03045.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 219",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_019",
+    "reg_no": "CSE_019",
+    "full_name": "Dr. Bhimavarapu Krishna Reddy",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Next-Generation Communication Networks and Systems",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03369/profilepic03369.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Next-Generation Communication Networks and Systems (Specialization CS-109)"
+    ],
+    "email": "bhimavarapu.krishna.reddy@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03369/profilepic03369.webp",
+    "office_location": "Vashishta Research Complex, Cabin 220",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_020",
+    "reg_no": "CSE_020",
+    "full_name": "Ms. Bhimavarapu. Jyothika",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02962/profilepic02962.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-355)",
+      "Deep Learning (Specialization CS-301)"
+    ],
+    "email": "bhimavarapu.jyothika@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02962/profilepic02962.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 221",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_021",
+    "reg_no": "CSE_021",
+    "full_name": "Mr. Chavali Amaresh",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Cloud Computing; Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02209/profilepic02209.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Cloud Computing (Specialization CS-461)",
+      "Machine Learning (Specialization CS-182)"
+    ],
+    "email": "chavali.amaresh@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02209/profilepic02209.JPG",
+    "office_location": "Vashishta Research Complex, Cabin 222",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_022",
+    "reg_no": "CSE_022",
+    "full_name": "Mr. Chavva Ravi Kishore Reddy",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Deep Learning; Natural Language Processing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/00707/profilepic00707.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Deep Learning (Specialization CS-291)",
+      "Natural Language Processing (Specialization CS-228)"
+    ],
+    "email": "chavva.ravi.kishore.reddy@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/00707/profilepic00707.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 223",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_023",
+    "reg_no": "CSE_023",
+    "full_name": "Mr. Cherukuri Naga Narasimha Rao",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machines and drives",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01905/profilepic01905.PNG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machines and drives (Specialization CS-317)"
+    ],
+    "email": "cherukuri.naga.narasimha.rao@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01905/profilepic01905.PNG",
+    "office_location": "Vashishta Research Complex, Cabin 224",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_024",
+    "reg_no": "CSE_024",
+    "full_name": "Dr. Chinna Gopi Simhadri",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Image Processing; Machine Learning; Deep Learning; XAI",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03318/profilepic03318.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Image Processing (Specialization CS-363)",
+      "Machine Learning (Specialization CS-114)",
+      "Deep Learning (Specialization CS-172)"
+    ],
+    "email": "chinna.gopi.simhadri@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03318/profilepic03318.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 225",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_025",
+    "reg_no": "CSE_025",
+    "full_name": "Ms. Christiana R.E Korrapati",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Large Language Models; Agentic AI; Quantum Computing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/30071/profilepic30071.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Large Language Models (Specialization CS-349)",
+      "Agentic AI (Specialization CS-206)",
+      "Quantum Computing (Specialization CS-360)"
+    ],
+    "email": "christiana.r.e.korrapati@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/30071/profilepic30071.JPG",
+    "office_location": "Vashishta Research Complex, Cabin 226",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_026",
+    "reg_no": "CSE_026",
+    "full_name": "Dr. Deepak Chowdary Edara",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Natural Language Processing; Quantum Computing; Deep Learning; Predictive Analytics",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02395/profilepic02395.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Natural Language Processing (Specialization CS-338)",
+      "Quantum Computing (Specialization CS-224)",
+      "Deep Learning (Specialization CS-242)"
+    ],
+    "email": "deepak.chowdary.edara@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02395/profilepic02395.png",
+    "office_location": "Aryabhata Academic Block, Cabin 227",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_027",
+    "reg_no": "CSE_027",
+    "full_name": "Mr. Dega Bala Kotaiah",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Internet of things and Block chain Technology",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03354/profilepic03354.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Internet of things and Block chain Technology (Specialization CS-442)"
+    ],
+    "email": "dega.bala.kotaiah@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03354/profilepic03354.webp",
+    "office_location": "Vashishta Research Complex, Cabin 228",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_028",
+    "reg_no": "CSE_028",
+    "full_name": "Mr. Dehtaj Shaik",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; Artificial Intelligence and Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/31073/profilepic31073.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-151)",
+      "Artificial Intelligence and Deep Learning (Specialization CS-354)"
+    ],
+    "email": "dehtaj.shaik@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/31073/profilepic31073.jpeg",
+    "office_location": "Aryabhata Academic Block, Cabin 229",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_029",
+    "reg_no": "CSE_029",
+    "full_name": "Ms. Devalla Manogna",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; Image processing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03356/profilepic03356.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-155)",
+      "Image processing (Specialization CS-235)"
+    ],
+    "email": "devalla.manogna@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03356/profilepic03356.webp",
+    "office_location": "Vashishta Research Complex, Cabin 230",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_030",
+    "reg_no": "CSE_030",
+    "full_name": "Ms. Divya",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02181/profilepic02181.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "divya@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02181/profilepic02181.JPG",
+    "office_location": "Aryabhata Academic Block, Cabin 231",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_031",
+    "reg_no": "CSE_031",
+    "full_name": "Dr. G Balu Narasimha Rao",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Adhoc Wireless Networks; Machine Learning; Data Mining",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02829/profilepic02829.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Adhoc Wireless Networks (Specialization CS-487)",
+      "Machine Learning (Specialization CS-413)",
+      "Data Mining (Specialization CS-214)"
+    ],
+    "email": "g.balu.narasimha.rao@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02829/profilepic02829.png",
+    "office_location": "Vashishta Research Complex, Cabin 232",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_032",
+    "reg_no": "CSE_032",
+    "full_name": "Dr. G Veerabhadra Chary",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Optimization of Microgrids; AI/ML Techniques in Power System Optimization",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03357/profilepic03357.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Optimization of Microgrids (Specialization CS-451)",
+      "AI/ML Techniques in Power System Optimization (Specialization CS-496)"
+    ],
+    "email": "g.veerabhadra.chary@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03357/profilepic03357.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 233",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_033",
+    "reg_no": "CSE_033",
+    "full_name": "Ms. Gaddam Tejaswi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Deep Learning & QML; Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03357/profilepic03357.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Deep Learning & QML (Specialization CS-232)",
+      "Machine Learning (Specialization CS-443)"
+    ],
+    "email": "gaddam.tejaswi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03357/profilepic03357.webp",
+    "office_location": "Vashishta Research Complex, Cabin 234",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_034",
+    "reg_no": "CSE_034",
+    "full_name": "Ms. Gopya Sri Arumalla",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03368/profilepic03368.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "gopya.sri.arumalla@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03368/profilepic03368.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 235",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_035",
+    "reg_no": "CSE_035",
+    "full_name": "Mrs. Guggilam Navya",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Neural networks; deep learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02290/profilepic02290.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Neural networks (Specialization CS-465)",
+      "deep learning (Specialization CS-343)"
+    ],
+    "email": "guggilam.navya@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02290/profilepic02290.png",
+    "office_location": "Vashishta Research Complex, Cabin 236",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_036",
+    "reg_no": "CSE_036",
+    "full_name": "Mr. Gujjula Murali",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02941/profilepic02941.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-106)",
+      "Deep Learning (Specialization CS-458)"
+    ],
+    "email": "gujjula.murali@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02941/profilepic02941.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 237",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_037",
+    "reg_no": "CSE_037",
+    "full_name": "Mr. Hitendra Singh",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Computer Vision and Human Pose Estimation; Multimodal Healthcare Analytics; Machine Learning and Artificial Intelligence",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03341/profilepic03341.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Computer Vision and Human Pose Estimation (Specialization CS-183)",
+      "Multimodal Healthcare Analytics (Specialization CS-468)",
+      "Machine Learning and Artificial Intelligence (Specialization CS-259)"
+    ],
+    "email": "hitendra.singh@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03341/profilepic03341.webp",
+    "office_location": "Vashishta Research Complex, Cabin 238",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_038",
+    "reg_no": "CSE_038",
+    "full_name": "Dr. J. Veeranjaneyulu",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02194/profilepic02194.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "j.veeranjaneyulu@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02194/profilepic02194.JPG",
+    "office_location": "Aryabhata Academic Block, Cabin 239",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_039",
+    "reg_no": "CSE_039",
+    "full_name": "Dr. James Deva Koresh H",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Wireless Sensor Networks; IoT; Computer Vision",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03102/profilepic03102.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Wireless Sensor Networks (Specialization CS-250)",
+      "IoT (Specialization CS-171)",
+      "Computer Vision (Specialization CS-482)"
+    ],
+    "email": "james.deva.koresh.h@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03102/profilepic03102.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 240",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_040",
+    "reg_no": "CSE_040",
+    "full_name": "Mrs. Jarugumalla Dayanika",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Privacy preserving in medical images using Reversible Data Hiding",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03079/profilepic03079.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Privacy preserving in medical images using Reversible Data Hiding (Specialization CS-239)"
+    ],
+    "email": "jarugumalla.dayanika@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03079/profilepic03079.jpeg",
+    "office_location": "Aryabhata Academic Block, Cabin 201",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_041",
+    "reg_no": "CSE_041",
+    "full_name": "Dr. Jhansi Lakshmi Potharlanka",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; Deep Learning; Image Processing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01702/profilepic01702.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-109)",
+      "Deep Learning (Specialization CS-276)",
+      "Image Processing (Specialization CS-348)"
+    ],
+    "email": "jhansi.lakshmi.potharlanka@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01702/profilepic01702.png",
+    "office_location": "Vashishta Research Complex, Cabin 202",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_042",
+    "reg_no": "CSE_042",
+    "full_name": "Mr. K Raveendra Reddy",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Federated Learning; Natural Language Processing; Internet of Vehicles",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02522/profilepic02522.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Federated Learning (Specialization CS-120)",
+      "Natural Language Processing (Specialization CS-331)",
+      "Internet of Vehicles (Specialization CS-470)"
+    ],
+    "email": "k.raveendra.reddy@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02522/profilepic02522.png",
+    "office_location": "Aryabhata Academic Block, Cabin 203",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_043",
+    "reg_no": "CSE_043",
+    "full_name": "Dr. K.B.Manikandan",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Computer Networking; Machine Learning; Cloud Computing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02476/profilepic02476.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Computer Networking (Specialization CS-399)",
+      "Machine Learning (Specialization CS-336)",
+      "Cloud Computing (Specialization CS-495)"
+    ],
+    "email": "k.b.manikandan@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02476/profilepic02476.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 204",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_044",
+    "reg_no": "CSE_044",
+    "full_name": "Ms. Kalluri Mercy Bhikshavathi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/31044/profilepic31044.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "kalluri.mercy.bhikshavathi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/31044/profilepic31044.jpeg",
+    "office_location": "Aryabhata Academic Block, Cabin 205",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_045",
+    "reg_no": "CSE_045",
+    "full_name": "Dr. Keerthi G",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03259/profilepic03259.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "keerthi.g@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03259/profilepic03259.webp",
+    "office_location": "Vashishta Research Complex, Cabin 206",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_046",
+    "reg_no": "CSE_046",
+    "full_name": "Mr. Kiran Kumar Kalagadda",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "MACHINE LEARNING",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02478/profilepic02478.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "MACHINE LEARNING (Specialization CS-351)"
+    ],
+    "email": "kiran.kumar.kalagadda@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02478/profilepic02478.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 207",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_047",
+    "reg_no": "CSE_047",
+    "full_name": "Mr. Kiran Kumar Raja Pagidipalli",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Digital Image Processing; Internet of Things and Wireless Technologies; Sensor Network",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02507/profilepic02507.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Digital Image Processing (Specialization CS-297)",
+      "Internet of Things and Wireless Technologies (Specialization CS-117)",
+      "Sensor Network (Specialization CS-164)"
+    ],
+    "email": "kiran.kumar.raja.pagidipalli@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02507/profilepic02507.png",
+    "office_location": "Vashishta Research Complex, Cabin 208",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_048",
+    "reg_no": "CSE_048",
+    "full_name": "Mr. Koduru Poorna Chandra Rao",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Wireless Networks; Computer Networks",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02998/profilepic02998.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Wireless Networks (Specialization CS-311)",
+      "Computer Networks (Specialization CS-156)"
+    ],
+    "email": "koduru.poorna.chandra.rao@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02998/profilepic02998.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 209",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_049",
+    "reg_no": "CSE_049",
+    "full_name": "Mrs. Kolla Jyotsna",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02754/profilepic02754.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "kolla.jyotsna@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02754/profilepic02754.jpeg",
+    "office_location": "Vashishta Research Complex, Cabin 210",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_050",
+    "reg_no": "CSE_050",
+    "full_name": "Mr. Kolluru Pavan Kumar",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Computer Networks; Predective Analysis",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01350/profilepic01350.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Computer Networks (Specialization CS-263)",
+      "Predective Analysis (Specialization CS-446)"
+    ],
+    "email": "kolluru.pavan.kumar@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01350/profilepic01350.png",
+    "office_location": "Aryabhata Academic Block, Cabin 211",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_051",
+    "reg_no": "CSE_051",
+    "full_name": "Mr. Kommu Kishore Babu",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; IoT",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03092/profilepic03092.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-499)",
+      "IoT (Specialization CS-382)"
+    ],
+    "email": "kommu.kishore.babu@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03092/profilepic03092.webp",
+    "office_location": "Vashishta Research Complex, Cabin 212",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_052",
+    "reg_no": "CSE_052",
+    "full_name": "Mr. Kumar Devapogu",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Image processing; Computer networks",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02900/profilepic02900.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Image processing (Specialization CS-490)",
+      "Computer networks (Specialization CS-372)"
+    ],
+    "email": "kumar.devapogu@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02900/profilepic02900.png",
+    "office_location": "Aryabhata Academic Block, Cabin 213",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_053",
+    "reg_no": "CSE_053",
+    "full_name": "Mr. Latesh Babu Talluri",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Unlearning; Privacy-Preserving AI; Trustworthy and Responsible AI",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03373/profilepic03373.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Unlearning (Specialization CS-471)",
+      "Privacy-Preserving AI (Specialization CS-184)",
+      "Trustworthy and Responsible AI (Specialization CS-293)"
+    ],
+    "email": "latesh.babu.talluri@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03373/profilepic03373.webp",
+    "office_location": "Vashishta Research Complex, Cabin 214",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_054",
+    "reg_no": "CSE_054",
+    "full_name": "Mr. M Veerendra",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Cyber Security; Federated Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03372/profilepic03372.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Cyber Security (Specialization CS-351)",
+      "Federated Learning (Specialization CS-356)"
+    ],
+    "email": "m.veerendra@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03372/profilepic03372.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 215",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_055",
+    "reg_no": "CSE_055",
+    "full_name": "Dr. M. Rajarao",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "AI/ML Applications in wireless networks",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03096/profilepic03096.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "AI/ML Applications in wireless networks (Specialization CS-396)"
+    ],
+    "email": "m.rajarao@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03096/profilepic03096.jpeg",
+    "office_location": "Vashishta Research Complex, Cabin 216",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_056",
+    "reg_no": "CSE_056",
+    "full_name": "Mrs. Magham.Sumalatha",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Deep Learning; Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02683/profilepic02683.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Deep Learning (Specialization CS-177)",
+      "Machine Learning (Specialization CS-261)"
+    ],
+    "email": "magham.sumalatha@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02683/profilepic02683.png",
+    "office_location": "Aryabhata Academic Block, Cabin 217",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_057",
+    "reg_no": "CSE_057",
+    "full_name": "Mrs. Maridu Bhargavi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Image Processing; Machine learning; Deep learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01201/profilepic01201.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Image Processing (Specialization CS-361)",
+      "Machine learning (Specialization CS-330)",
+      "Deep learning (Specialization CS-158)"
+    ],
+    "email": "maridu.bhargavi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01201/profilepic01201.png",
+    "office_location": "Vashishta Research Complex, Cabin 218",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_058",
+    "reg_no": "CSE_058",
+    "full_name": "Dr. MD Oqail Ahmad",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Cloud Computing; Digital Image Processing and Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02433/profilepic02433.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Cloud Computing (Specialization CS-296)",
+      "Digital Image Processing and Machine Learning (Specialization CS-401)"
+    ],
+    "email": "md.oqail.ahmad@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02433/profilepic02433.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 219",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_059",
+    "reg_no": "CSE_059",
+    "full_name": "Mr. Mihir Barman",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/00995/profilepic00995.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "mihir.barman@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/00995/profilepic00995.JPG",
+    "office_location": "Vashishta Research Complex, Cabin 220",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_060",
+    "reg_no": "CSE_060",
+    "full_name": "Mr. Mihir Bhatt",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Blockchain Technology; Network Security; Classical Cryptography Operations",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03340/profilepic03340.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Blockchain Technology (Specialization CS-348)",
+      "Network Security (Specialization CS-145)",
+      "Classical Cryptography Operations (Specialization CS-252)"
+    ],
+    "email": "mihir.bhatt@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03340/profilepic03340.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 221",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_061",
+    "reg_no": "CSE_061",
+    "full_name": "Mr. Mohana Venkateswara Rao Mathi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Federated Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03020/profilepic03020.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Federated Learning (Specialization CS-186)"
+    ],
+    "email": "mohana.venkateswara.rao.mathi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03020/profilepic03020.jpeg",
+    "office_location": "Vashishta Research Complex, Cabin 222",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_062",
+    "reg_no": "CSE_062",
+    "full_name": "Ms. N B Akhilandeswari",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03355/profilepic03355.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "n.b.akhilandeswari@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03355/profilepic03355.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 223",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_063",
+    "reg_no": "CSE_063",
+    "full_name": "Mrs. N. Archana",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02752/profilepic02752.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "n.archana@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02752/profilepic02752.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 224",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_064",
+    "reg_no": "CSE_064",
+    "full_name": "Mrs. Nakkala Mounika",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "natural processing language",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03115/profilepic03115.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "natural processing language (Specialization CS-439)"
+    ],
+    "email": "nakkala.mounika@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03115/profilepic03115.jpeg",
+    "office_location": "Aryabhata Academic Block, Cabin 225",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_065",
+    "reg_no": "CSE_065",
+    "full_name": "Mrs. Nalluri Bhargavi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03112/profilepic03112.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "nalluri.bhargavi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03112/profilepic03112.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 226",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_066",
+    "reg_no": "CSE_066",
+    "full_name": "Mr. Nalluri Brahma Naidu",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Cryptography and Network Security; Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02843/profilepic02843.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Cryptography and Network Security (Specialization CS-471)",
+      "Machine Learning (Specialization CS-181)"
+    ],
+    "email": "nalluri.brahma.naidu@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02843/profilepic02843.png",
+    "office_location": "Aryabhata Academic Block, Cabin 227",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_067",
+    "reg_no": "CSE_067",
+    "full_name": "Ms. Neeli Sarvani",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03365/profilepic03365.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "neeli.sarvani@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03365/profilepic03365.webp",
+    "office_location": "Vashishta Research Complex, Cabin 228",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_068",
+    "reg_no": "CSE_068",
+    "full_name": "Mr. Ongole Gandhi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Data Mining; Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01958/profilepic01958.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Mining (Specialization CS-471)",
+      "Machine Learning (Specialization CS-241)"
+    ],
+    "email": "ongole.gandhi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01958/profilepic01958.jpeg",
+    "office_location": "Aryabhata Academic Block, Cabin 229",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_069",
+    "reg_no": "CSE_069",
+    "full_name": "Mr. P Vamsi Krishna",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Artificial Intelligence and Machine Learning; Generative AI and Large Language Models; Emerging Technologies",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03362/profilepic03362.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Artificial Intelligence and Machine Learning (Specialization CS-151)",
+      "Generative AI and Large Language Models (Specialization CS-476)",
+      "Emerging Technologies (Specialization CS-299)"
+    ],
+    "email": "p.vamsi.krishna@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03362/profilepic03362.webp",
+    "office_location": "Vashishta Research Complex, Cabin 230",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_070",
+    "reg_no": "CSE_070",
+    "full_name": "Dr. P. Rajani",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Organic Synthesis; Actinide- Extraction and recovery; Computational Studies",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03047/profilepic03047.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Organic Synthesis (Specialization CS-345)",
+      "Actinide- Extraction and recovery (Specialization CS-407)",
+      "Computational Studies (Specialization CS-412)"
+    ],
+    "email": "p.rajani@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03047/profilepic03047.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 231",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_071",
+    "reg_no": "CSE_071",
+    "full_name": "Mrs. P.Anusha",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "computer networks; data mining; cloud computing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03098/profilepic03098.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "computer networks (Specialization CS-304)",
+      "data mining (Specialization CS-173)",
+      "cloud computing (Specialization CS-188)"
+    ],
+    "email": "p.anusha@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03098/profilepic03098.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 232",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_072",
+    "reg_no": "CSE_072",
+    "full_name": "Mr. Panthgani Vijaya Babu",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "GPGPU's; Cloud Computing; Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01976/profilepic01976.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "GPGPU's (Specialization CS-100)",
+      "Cloud Computing (Specialization CS-126)",
+      "Machine Learning (Specialization CS-266)"
+    ],
+    "email": "panthgani.vijaya.babu@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01976/profilepic01976.png",
+    "office_location": "Aryabhata Academic Block, Cabin 233",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_073",
+    "reg_no": "CSE_073",
+    "full_name": "Mrs. Parimala Garnepudi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Computer Networks; Network Security and Wireless Networks",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/646/profilepic646.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Computer Networks (Specialization CS-184)",
+      "Network Security and Wireless Networks (Specialization CS-434)"
+    ],
+    "email": "parimala.garnepudi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/646/profilepic646.png",
+    "office_location": "Vashishta Research Complex, Cabin 234",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_074",
+    "reg_no": "CSE_074",
+    "full_name": "Mrs. Pavani Karra",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Data Science",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03171/profilepic03171.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Science (Specialization CS-323)"
+    ],
+    "email": "pavani.karra@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03171/profilepic03171.png",
+    "office_location": "Aryabhata Academic Block, Cabin 235",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_075",
+    "reg_no": "CSE_075",
+    "full_name": "Dr. Phanindra Thota",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; Deep Learning; Artificial Intelligence",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03059/profilepic03059.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-296)",
+      "Deep Learning (Specialization CS-125)",
+      "Artificial Intelligence (Specialization CS-397)"
+    ],
+    "email": "phanindra.thota@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03059/profilepic03059.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 236",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_076",
+    "reg_no": "CSE_076",
+    "full_name": "Mrs. Pilli Mounika",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02960/profilepic02960.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "pilli.mounika@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02960/profilepic02960.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 237",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_077",
+    "reg_no": "CSE_077",
+    "full_name": "Dr. Pradeep Chand Kopila",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Electron Beam Welding of similar and dissimilar weld samples; Finite element modeling on coupled multi-physics Analysis on welding phenomenon",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/00619/profilepic00619.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Electron Beam Welding of similar and dissimilar weld samples (Specialization CS-440)",
+      "Finite element modeling on coupled multi-physics Analysis on welding phenomenon (Specialization CS-493)"
+    ],
+    "email": "pradeep.chand.kopila@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/00619/profilepic00619.JPG",
+    "office_location": "Vashishta Research Complex, Cabin 238",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_078",
+    "reg_no": "CSE_078",
+    "full_name": "Ms. Pushya Chaparala",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Recommender systems; Symbolic Data Analysis",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01988/profilepic01988.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Recommender systems (Specialization CS-166)",
+      "Symbolic Data Analysis (Specialization CS-362)"
+    ],
+    "email": "pushya.chaparala@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01988/profilepic01988.JPG",
+    "office_location": "Aryabhata Academic Block, Cabin 239",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_079",
+    "reg_no": "CSE_079",
+    "full_name": "Ms. R. Nithya",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine learning; Deep learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/31077/profilepic31077.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine learning (Specialization CS-466)",
+      "Deep learning (Specialization CS-329)"
+    ],
+    "email": "r.nithya@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/31077/profilepic31077.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 240",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_080",
+    "reg_no": "CSE_080",
+    "full_name": "Dr. Rambabu Kusuma",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "ML; DIP; VLSI",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02480/profilepic02480.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "ML (Specialization CS-370)",
+      "DIP (Specialization CS-138)",
+      "VLSI (Specialization CS-180)"
+    ],
+    "email": "rambabu.kusuma@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02480/profilepic02480.png",
+    "office_location": "Aryabhata Academic Block, Cabin 201",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_081",
+    "reg_no": "CSE_081",
+    "full_name": "Mrs. Ravuri Lalitha",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Image Processing; Computer Vision",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02804/profilepic02804.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Image Processing (Specialization CS-244)",
+      "Computer Vision (Specialization CS-452)"
+    ],
+    "email": "ravuri.lalitha@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02804/profilepic02804.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 202",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_082",
+    "reg_no": "CSE_082",
+    "full_name": "Dr. Renugadevi R",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Networking; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02495/profilepic02495.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Networking (Specialization CS-467)",
+      "Deep Learning (Specialization CS-396)"
+    ],
+    "email": "renugadevi.r@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02495/profilepic02495.png",
+    "office_location": "Aryabhata Academic Block, Cabin 203",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_083",
+    "reg_no": "CSE_083",
+    "full_name": "Mr. S Jayasankar",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning and Simulation Models",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02341/profilepic02341.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning and Simulation Models (Specialization CS-326)"
+    ],
+    "email": "s.jayasankar@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02341/profilepic02341.png",
+    "office_location": "Vashishta Research Complex, Cabin 204",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_084",
+    "reg_no": "CSE_084",
+    "full_name": "Mr. S Suresh Babu",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Bio Medical Imaging; Machine learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02451/profilepic02451.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Bio Medical Imaging (Specialization CS-136)",
+      "Machine learning (Specialization CS-165)"
+    ],
+    "email": "s.suresh.babu@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02451/profilepic02451.png",
+    "office_location": "Aryabhata Academic Block, Cabin 205",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_085",
+    "reg_no": "CSE_085",
+    "full_name": "Mrs. Sai Eswari Yalavarthi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Digital Image Processing; Neural Networks",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03135/profilepic03135.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Digital Image Processing (Specialization CS-362)",
+      "Neural Networks (Specialization CS-434)"
+    ],
+    "email": "sai.eswari.yalavarthi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03135/profilepic03135.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 206",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_086",
+    "reg_no": "CSE_086",
+    "full_name": "Ms. Sajida Sultana.SK",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Natural Language Processing; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01919/profilepic01919.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Natural Language Processing (Specialization CS-344)",
+      "Deep Learning (Specialization CS-248)"
+    ],
+    "email": "sajida.sultana.sk@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01919/profilepic01919.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 207",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_087",
+    "reg_no": "CSE_087",
+    "full_name": "Mrs. Samhitha",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03363/profilepic03363.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "samhitha@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03363/profilepic03363.webp",
+    "office_location": "Vashishta Research Complex, Cabin 208",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_088",
+    "reg_no": "CSE_088",
+    "full_name": "Dr. Satish Kumar Satti",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Digital Image Processing; Computer Vision; Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02396/profilepic02396.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Digital Image Processing (Specialization CS-284)",
+      "Computer Vision (Specialization CS-343)",
+      "Machine Learning (Specialization CS-241)"
+    ],
+    "email": "satish.kumar.satti@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02396/profilepic02396.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 209",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_089",
+    "reg_no": "CSE_089",
+    "full_name": "Dr. Saubhagya Ranjan Biswal",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Soft Computing Algorithms; Machine Learning; Renewable Energy Sources",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02506/profilepic02506.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Soft Computing Algorithms (Specialization CS-330)",
+      "Machine Learning (Specialization CS-302)",
+      "Renewable Energy Sources (Specialization CS-254)"
+    ],
+    "email": "saubhagya.ranjan.biswal@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02506/profilepic02506.png",
+    "office_location": "Vashishta Research Complex, Cabin 210",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_090",
+    "reg_no": "CSE_090",
+    "full_name": "Mr. Senthil D",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "AI in cybersecurity",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03082/profilepic03082.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "AI in cybersecurity (Specialization CS-100)"
+    ],
+    "email": "senthil.d@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03082/profilepic03082.JPG",
+    "office_location": "Aryabhata Academic Block, Cabin 211",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_091",
+    "reg_no": "CSE_091",
+    "full_name": "Mr. Shaik Jani",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02722/profilepic02722.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "shaik.jani@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02722/profilepic02722.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 212",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_092",
+    "reg_no": "CSE_092",
+    "full_name": "Ms. Shaik Kareena Yashmin",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine learning; Deep Learning; Computer Vision",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03366/profilepic03366.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine learning (Specialization CS-183)",
+      "Deep Learning (Specialization CS-340)",
+      "Computer Vision (Specialization CS-260)"
+    ],
+    "email": "shaik.kareena.yashmin@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03366/profilepic03366.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 213",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_093",
+    "reg_no": "CSE_093",
+    "full_name": "Mr. Shaik Khadersha",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03317/profilepic03317.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "shaik.khadersha@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03317/profilepic03317.webp",
+    "office_location": "Vashishta Research Complex, Cabin 214",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_094",
+    "reg_no": "CSE_094",
+    "full_name": "Ms. Shaik Reehana",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine learning; Internet of Things",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03066/profilepic03066.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine learning (Specialization CS-116)",
+      "Internet of Things (Specialization CS-427)"
+    ],
+    "email": "shaik.reehana@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03066/profilepic03066.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 215",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_095",
+    "reg_no": "CSE_095",
+    "full_name": "Mr. Shaik Sikindar",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Data Science; Machine Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02172/profilepic02172.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Science (Specialization CS-491)",
+      "Machine Learning (Specialization CS-226)"
+    ],
+    "email": "shaik.sikindar@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02172/profilepic02172.png",
+    "office_location": "Vashishta Research Complex, Cabin 216",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_096",
+    "reg_no": "CSE_096",
+    "full_name": "Mr. SK.Bhadar",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Image processing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02349/profilepic02349.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Image processing (Specialization CS-109)"
+    ],
+    "email": "sk.bhadar@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02349/profilepic02349.jpeg",
+    "office_location": "Aryabhata Academic Block, Cabin 217",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_097",
+    "reg_no": "CSE_097",
+    "full_name": "Mr. Sourav Mondal",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Pattern Recognition; Information Retrieval; Biosignal Processing; Digital Image Processing; Machine Learning; Deep Learning; Computational Biology; Natural Language processing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02318/profilepic02318.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Pattern Recognition (Specialization CS-347)",
+      "Information Retrieval (Specialization CS-275)",
+      "Biosignal Processing (Specialization CS-370)"
+    ],
+    "email": "sourav.mondal@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02318/profilepic02318.png",
+    "office_location": "Vashishta Research Complex, Cabin 218",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_098",
+    "reg_no": "CSE_098",
+    "full_name": "Dr. Sunil Babu Melingi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Bio-Medical Image Analysis using Deep Learning Algorithms with optimization techniques; Edge Computing for Computer Vision; Distributed Heterogeneous Embedded Systems Design and IoT",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02468/profilepic02468.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Bio-Medical Image Analysis using Deep Learning Algorithms with optimization techniques (Specialization CS-423)",
+      "Edge Computing for Computer Vision (Specialization CS-194)",
+      "Distributed Heterogeneous Embedded Systems Design and IoT (Specialization CS-185)"
+    ],
+    "email": "sunil.babu.melingi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02468/profilepic02468.JPG",
+    "office_location": "Aryabhata Academic Block, Cabin 219",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_099",
+    "reg_no": "CSE_099",
+    "full_name": "Mrs. Sunkara Anitha",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Natural Language Processing; Quantum Computing; Explainable AI",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/30564/profilepic30564.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Natural Language Processing (Specialization CS-406)",
+      "Quantum Computing (Specialization CS-159)",
+      "Explainable AI (Specialization CS-497)"
+    ],
+    "email": "sunkara.anitha@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/30564/profilepic30564.png",
+    "office_location": "Vashishta Research Complex, Cabin 220",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_100",
+    "reg_no": "CSE_100",
+    "full_name": "Mrs. Swarna Lalitha",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02842/profilepic02842.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "swarna.lalitha@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02842/profilepic02842.png",
+    "office_location": "Aryabhata Academic Block, Cabin 221",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_101",
+    "reg_no": "CSE_101",
+    "full_name": "Ms. Swathi Koganti",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Cloud Computing; Machine Learning and Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02906/profilepic02906.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Cloud Computing (Specialization CS-414)",
+      "Machine Learning and Deep Learning (Specialization CS-256)"
+    ],
+    "email": "swathi.koganti@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02906/profilepic02906.JPG",
+    "office_location": "Vashishta Research Complex, Cabin 222",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_102",
+    "reg_no": "CSE_102",
+    "full_name": "Mr. Syed Nafees Ahamed",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "NLP With Deep Learning; Optimization Algorithms; Cloud & Fogg Computing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03361/profilepic03361.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "NLP With Deep Learning (Specialization CS-462)",
+      "Optimization Algorithms (Specialization CS-353)",
+      "Cloud & Fogg Computing (Specialization CS-334)"
+    ],
+    "email": "syed.nafees.ahamed@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03361/profilepic03361.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 223",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_103",
+    "reg_no": "CSE_103",
+    "full_name": "Mrs. Syed.Shareefunnisa",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine learning; Deep Learning; Artificial Intelligence; Data Mining Techniques",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01238/profilepic01238.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine learning (Specialization CS-279)",
+      "Deep Learning (Specialization CS-407)",
+      "Artificial Intelligence (Specialization CS-420)"
+    ],
+    "email": "syed.shareefunnisa@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01238/profilepic01238.png",
+    "office_location": "Vashishta Research Complex, Cabin 224",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_104",
+    "reg_no": "CSE_104",
+    "full_name": "Mr. T V Vamsikrishna",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03389/profilepic03389.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "t.v.vamsikrishna@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03389/profilepic03389.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 225",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_105",
+    "reg_no": "CSE_105",
+    "full_name": "Mrs. T.Leelavathy",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Image processing and Computer Vision",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02834/profilepic02834.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Image processing and Computer Vision (Specialization CS-282)"
+    ],
+    "email": "t.leelavathy@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02834/profilepic02834.png",
+    "office_location": "Vashishta Research Complex, Cabin 226",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_106",
+    "reg_no": "CSE_106",
+    "full_name": "Dr. T.R.Rajesh",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Reinforcement Learning; AI in Healthcare; Data Science",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01989/profilepic01989.JPG",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Reinforcement Learning (Specialization CS-123)",
+      "AI in Healthcare (Specialization CS-214)",
+      "Data Science (Specialization CS-392)"
+    ],
+    "email": "t.r.rajesh@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01989/profilepic01989.JPG",
+    "office_location": "Aryabhata Academic Block, Cabin 227",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_107",
+    "reg_no": "CSE_107",
+    "full_name": "Ms. Talari Priyabharathi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine learning; Deep learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/31050/profilepic31050.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine learning (Specialization CS-134)",
+      "Deep learning (Specialization CS-331)"
+    ],
+    "email": "talari.priyabharathi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/31050/profilepic31050.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 228",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_108",
+    "reg_no": "CSE_108",
+    "full_name": "Mrs. Tipura Damarla",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/00760/profilepic00760.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "tipura.damarla@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/00760/profilepic00760.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 229",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_109",
+    "reg_no": "CSE_109",
+    "full_name": "Mr. Tirumalasetti Narasimha Rao",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "machine learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02516/profilepic02516.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "machine learning (Specialization CS-317)"
+    ],
+    "email": "tirumalasetti.narasimha.rao@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02516/profilepic02516.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 230",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_110",
+    "reg_no": "CSE_110",
+    "full_name": "Ms. Upalanchi Vara Lakshmi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03316/profilepic03316.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "upalanchi.vara.lakshmi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03316/profilepic03316.webp",
+    "office_location": "Aryabhata Academic Block, Cabin 231",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_111",
+    "reg_no": "CSE_111",
+    "full_name": "Mr. Uppala Venkateswara Rao",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Deep learning; Image Processing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02913/profilepic02913.jpeg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Deep learning (Specialization CS-449)",
+      "Image Processing (Specialization CS-221)"
+    ],
+    "email": "uppala.venkateswara.rao@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02913/profilepic02913.jpeg",
+    "office_location": "Vashishta Research Complex, Cabin 232",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_112",
+    "reg_no": "CSE_112",
+    "full_name": "Mr. Uttej Kumar Nannapaneni",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Computer Networks; Blockchain Technology",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/01918/profilepic01918.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B",
+      "Section C"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Computer Networks (Specialization CS-337)",
+      "Blockchain Technology (Specialization CS-397)"
+    ],
+    "email": "uttej.kumar.nannapaneni@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/01918/profilepic01918.png",
+    "office_location": "Aryabhata Academic Block, Cabin 233",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_113",
+    "reg_no": "CSE_113",
+    "full_name": "Mrs. V.Nandini",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02751/profilepic02751.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "v.nandini@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02751/profilepic02751.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 234",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_114",
+    "reg_no": "CSE_114",
+    "full_name": "Mrs. V.Sai Spandana",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02696/profilepic02696.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "v.sai.spandana@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02696/profilepic02696.png",
+    "office_location": "Aryabhata Academic Block, Cabin 235",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_115",
+    "reg_no": "CSE_115",
+    "full_name": "Mrs. Varagani Tejaswi",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03367/profilepic03367.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "varagani.tejaswi@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03367/profilepic03367.webp",
+    "office_location": "Vashishta Research Complex, Cabin 236",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_116",
+    "reg_no": "CSE_116",
+    "full_name": "Dr. Velpula Nagi Reddy",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Image processing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/20083/profilepic20083.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C",
+      "Section A"
+    ],
+    "attendance_pct": 96,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Image processing (Specialization CS-277)"
+    ],
+    "email": "velpula.nagi.reddy@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/20083/profilepic20083.png",
+    "office_location": "Aryabhata Academic Block, Cabin 237",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_117",
+    "reg_no": "CSE_117",
+    "full_name": "Mr. Venkata Rajulu Pilli",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "BRAIN COMPUTER INTERFACE",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02691/profilepic02691.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 95,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "BRAIN COMPUTER INTERFACE (Specialization CS-127)"
+    ],
+    "email": "venkata.rajulu.pilli@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02691/profilepic02691.png",
+    "office_location": "Vashishta Research Complex, Cabin 238",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_118",
+    "reg_no": "CSE_118",
+    "full_name": "Dr. Vijai Meyyappan Moorthy",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Neuro-optoelectronic interfaces; visual prosthesis; optical stimulation; microfabrication; polymers; neuroprosthetics; biocompatibility; visual system; sight restoration; sensory perception; artificial photoreceptors; Organic Solar cell; Silicon Solar cell fabrication; Bio MEMS; Nano Materials; Bio interfaces; IoT; Bio medical devices",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02493/profilepic02493.png",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 94,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Neuro-optoelectronic interfaces (Specialization CS-196)",
+      "visual prosthesis (Specialization CS-474)",
+      "optical stimulation (Specialization CS-194)"
+    ],
+    "email": "vijai.meyyappan.moorthy@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02493/profilepic02493.png",
+    "office_location": "Aryabhata Academic Block, Cabin 239",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_119",
+    "reg_no": "CSE_119",
+    "full_name": "Dr. Vijitha Ananthi J.",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Mobile Networks; Flying Ad hoc Network; Optimization Algorithms",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03055/profilepic03055.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 93,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Mobile Networks (Specialization CS-308)",
+      "Flying Ad hoc Network (Specialization CS-250)",
+      "Optimization Algorithms (Specialization CS-393)"
+    ],
+    "email": "vijitha.ananthi.j@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03055/profilepic03055.jpg",
+    "office_location": "Vashishta Research Complex, Cabin 240",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_120",
+    "reg_no": "CSE_120",
+    "full_name": "Dr. Vinoj Jothipandian",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Machine Learning; NLP & NLM; Image Processing",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/02472/profilepic02472.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A",
+      "Section B"
+    ],
+    "attendance_pct": 92,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Machine Learning (Specialization CS-164)",
+      "NLP & NLM (Specialization CS-323)",
+      "Image Processing (Specialization CS-482)"
+    ],
+    "email": "vinoj.jothipandian@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/02472/profilepic02472.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 201",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_121",
+    "reg_no": "CSE_121",
+    "full_name": "Mr. Vishal Jaiswal",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "Natural Language Processing; Machine Learning; Deep Learning",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03378/profilepic03378.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section B"
+    ],
+    "attendance_pct": 99,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Natural Language Processing (Specialization CS-118)",
+      "Machine Learning (Specialization CS-163)",
+      "Deep Learning (Specialization CS-110)"
+    ],
+    "email": "vishal.jaiswal@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03378/profilepic03378.webp",
+    "office_location": "Vashishta Research Complex, Cabin 202",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  },
+  {
+    "faculty_id": "CSE_122",
+    "reg_no": "CSE_122",
+    "full_name": "Dr. Yadlapalli Ramamohan",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/00103/profilepic00103.jpg",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section C"
+    ],
+    "attendance_pct": 98,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "yadlapalli.ramamohan@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/00103/profilepic00103.jpg",
+    "office_location": "Aryabhata Academic Block, Cabin 203",
+    "cabin_hours": "Mon/Wed 14:00 - 16:30"
+  },
+  {
+    "faculty_id": "CSE_123",
+    "reg_no": "CSE_123",
+    "full_name": "Ms. Yemineni Sravani",
+    "designation": "Assistant Professor",
+    "department": "Computer Science Engineering",
+    "research_interests": "",
+    "photo_url": "https://vignan.ac.in/Facultyprofiles/uploads/03360/profilepic03360.webp",
+    "profile_url": "https://vignan.ac.in/newvignan/departments/deptpeople.php?deptid=sch3_dept1&deptnm=CSE&school=sch3",
+    "source": "Vignan University official CSE faculty page",
+    "assigned_sections": [
+      "Section A"
+    ],
+    "attendance_pct": 97,
+    "workload_hours_per_week": 18,
+    "courses_taught": [
+      "Data Structures with C++ (CS201)",
+      "Object Oriented Programming with Java (CS204)"
+    ],
+    "email": "yemineni.sravani@vignan.ac.in",
+    "avatar_url": "https://vignan.ac.in/Facultyprofiles/uploads/03360/profilepic03360.webp",
+    "office_location": "Vashishta Research Complex, Cabin 204",
+    "cabin_hours": "Tue/Thu 10:30 - 13:00"
+  }
+]
