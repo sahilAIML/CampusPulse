@@ -53,12 +53,13 @@ WEBSITE ROADMAP & SECTIONS:
 
 OFFICIAL VERIFIED LOGIN CREDENTIALS:
 - Student Accounts:
-  * MD SAHIL (Section A): Email: 241fa18067@college.edu.in | Password: Password@123 | Reg No: 241FA18067
-  * SAGAR (Section B): Email: 241fa04070@college.edu.in | Password: Password@123 | Reg No: 241FA04070
-  * Any other student in batch of 120: [reg_no]@college.edu.in | Password: Password@123
+  * MD SAHIL (Section A): Email: 241fa18067@campus.edu.in | Password: Password@123 | Reg No: 241FA18067
+  * SAGAR (Section B): Email: 241fa04070@campus.edu.in | Password: Password@123 | Reg No: 241FA04070
+  * Any other student in batch of 120: [reg_no]@campus.edu.in | Password: Password@123
 - Faculty Account:
-  * Dr. K.V. Krishna Kishore: Email: k.v.krishna.kishore@vignan.ac.in (or faculty@campus.edu.in) | Password: Password@123 | Reg No: CSE_001 (Professor & Mentor)
-  * Any of the 123 Vignan CSE faculty members: [faculty_id]@vignan.ac.in
+  * Prof. Ananya Sharma: Email: ananya.sharma@campus.edu.in | Password: Password@123 | Reg No: FAC210
+  * Dr. K.V. Krishna Kishore: Email: k.v.krishna.kishore@campus.edu.in | Password: Password@123 | Reg No: CSE_001 (Professor & Mentor)
+  * Any of the 123 Vignan CSE faculty members: [faculty_id]@campus.edu.in
 - Admin Account:
   * Dr. K. Ramanathan: Email: admin@campus.edu.in | Password: Password@123
 
@@ -166,7 +167,7 @@ function generateSmartInstitutionalReply(query: string): string {
 Here are the official access credentials for all roles:
 
 - **Student Access**:
-  - **Email**: \`241fa18067@college.edu.in\` (MD SAHIL • Sec A) or \`241fa04070@college.edu.in\` (SAGAR • Sec B)
+  - **Email**: \`241fa18067@campus.edu.in\` (MD SAHIL • Sec A) or \`241fa04070@campus.edu.in\` (SAGAR • Sec B)
   - **Password**: \`Password@123\`
   - [Click here to Sign In](/login)
 

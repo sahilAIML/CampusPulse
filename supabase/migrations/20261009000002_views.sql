@@ -63,7 +63,7 @@ SELECT
   s.id AS student_id,
   s.reg_no,
   COALESCE(p.full_name, 'Unknown Student') AS full_name,
-  COALESCE(p.email, LOWER(s.reg_no) || '@college.edu.in') AS email,
+  COALESCE(p.email, LOWER(s.reg_no) || '@campus.edu.in') AS email,
   p.avatar_url,
   p.role AS profile_role,
 

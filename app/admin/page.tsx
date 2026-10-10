@@ -16,6 +16,7 @@ import {
   CheckCircle2,
   Calendar,
   Layers,
+  UserPlus,
 } from 'lucide-react';
 import { AdminSidebar, AdminTab } from '@/components/admin/AdminSidebar';
 import { AdminMobileNav } from '@/components/admin/AdminMobileNav';
@@ -27,6 +28,7 @@ import { CSVImporter } from '@/components/admin/CSVImporter';
 import { UserManagement } from '@/components/admin/UserManagement';
 import { ContentManager } from '@/components/admin/ContentManager';
 import { AuditLogViewer } from '@/components/admin/AuditLogViewer';
+import { AddEntityModal } from '@/components/admin/AddEntityModal';
 import { ClayBadge } from '@/components/ui/ClayBadge';
 import { ClayCard } from '@/components/ui/ClayCard';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
@@ -37,6 +39,7 @@ export default function AdminPage() {
   const [activeTab, setActiveTab] = useState<AdminTab>('dashboard');
   const [currentUser, setCurrentUser] = useState<AuthUser | null>(() => getSessionUser());
   const [authChecked, setAuthChecked] = useState(false);
+  const [addModalOpen, setAddModalOpen] = useState(false);
 
   useEffect(() => {
     const user = getSessionUser();
@@ -118,6 +121,14 @@ export default function AdminPage() {
 
             {/* Quick Switch Pills & Theme Mode */}
             <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setAddModalOpen(true)}
+                className="px-3.5 py-2 rounded-2xl bg-[#FF7A59] text-white shadow-[var(--shadow-clay-coral)] text-xs font-heading font-extrabold flex items-center gap-1.5 hover:opacity-95 transition-all"
+              >
+                <UserPlus className="h-3.5 w-3.5" />
+                <span>+ Add Member</span>
+              </button>
               <ThemeToggle size="sm" />
               <Link
                 href="/faculty"
@@ -175,6 +186,12 @@ export default function AdminPage() {
 
       {/* 4. Mobile Bottom Navigation */}
       <AdminMobileNav activeTab={activeTab} onTabChange={setActiveTab} />
+
+      {/* 5. Add Student & Faculty Modal */}
+      <AddEntityModal
+        isOpen={addModalOpen}
+        onClose={() => setAddModalOpen(false)}
+      />
     </div>
   );
 }

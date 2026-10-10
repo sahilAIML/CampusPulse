@@ -38,3 +38,6 @@ next-env.d.ts
 # runner wrappers
 powershell.cmd
 powershell.bat
+
+# generated remotion placeholder videos (re-generate via scripts/prepare-asset-placeholders.js)
+public/assets/*.mp4

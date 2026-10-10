@@ -13,7 +13,7 @@ import {
   batchComputeStudentScores,
   computeSectionBenchmarks,
 } from '../analytics/engine';
-import { getSectionStudents, getStudentDetail, StudentDetail } from './students';
+import { getSectionStudents, getStudentDetail, StudentDetail, addStudentToCohort } from './students';
 import { MOCK_ANNOUNCEMENTS, MOCK_PLACEMENTS } from './mock-store';
 import { Announcement, PlacementRecord } from './types';
 import vignanFacultyJson from './vignan_faculty.json';
@@ -114,7 +114,7 @@ if (MOCK_FACULTY_PROFILES['CSE_002']) {
 let MOCK_USERS_STORE: AdminUser[] = [
   {
     id: 'usr-1',
-    email: 'admin.kpmg@campuspulse.edu',
+    email: 'admin@campus.edu.in',
     full_name: 'Dr. S. K. Narayanan (Dean of Academics)',
     role: 'admin',
     reg_no: 'ADM001',
@@ -123,7 +123,16 @@ let MOCK_USERS_STORE: AdminUser[] = [
   },
   {
     id: 'usr-fac-1',
-    email: 'k.v.krishna.kishore@vignan.ac.in',
+    email: 'ananya.sharma@campus.edu.in',
+    full_name: 'Prof. Ananya Sharma',
+    role: 'faculty',
+    reg_no: 'FAC210',
+    status: 'active',
+    created_at: '2026-02-01T09:30:00Z',
+  },
+  {
+    id: 'usr-fac-2',
+    email: 'k.v.krishna.kishore@campus.edu.in',
     full_name: 'Dr. K.V. Krishna Kishore',
     role: 'faculty',
     reg_no: 'CSE_001',
@@ -131,8 +140,8 @@ let MOCK_USERS_STORE: AdminUser[] = [
     created_at: '2026-02-01T09:30:00Z',
   },
   {
-    id: 'usr-fac-2',
-    email: 'venkatrama.phani.kumar.s@vignan.ac.in',
+    id: 'usr-fac-3',
+    email: 'venkatrama.phani.kumar.s@campus.edu.in',
     full_name: 'Dr. Venkatrama Phani Kumar S',
     role: 'faculty',
     reg_no: 'CSE_002',
@@ -140,17 +149,8 @@ let MOCK_USERS_STORE: AdminUser[] = [
     created_at: '2026-02-01T09:30:00Z',
   },
   {
-    id: 'usr-fac-3',
-    email: 'balakrishna.kethineni@vignan.ac.in',
-    full_name: 'Dr. Balakrishna Kethineni',
-    role: 'faculty',
-    reg_no: 'CSE_003',
-    status: 'active',
-    created_at: '2026-02-01T09:30:00Z',
-  },
-  {
     id: 'usr-4',
-    email: 'md.sahil@student.campuspulse.edu',
+    email: '241fa18067@campus.edu.in',
     full_name: 'MD SAHIL',
     role: 'student',
     reg_no: '241FA18067',
@@ -159,7 +159,7 @@ let MOCK_USERS_STORE: AdminUser[] = [
   },
   {
     id: 'usr-5',
-    email: 'sagar@student.campuspulse.edu',
+    email: '241fa04070@campus.edu.in',
     full_name: 'SAGAR',
     role: 'student',
     reg_no: '241FA04070',
@@ -229,24 +229,39 @@ let adminPlacements: PlacementRecord[] = [...MOCK_PLACEMENTS];
 // ----------------------------------------------------------------------------
 
 export async function getAllFacultyProfiles(): Promise<FacultyProfile[]> {
-  return vignanFacultyJson as FacultyProfile[];
+  const base = vignanFacultyJson as FacultyProfile[];
+  let custom: FacultyProfile[] = [];
+  if (typeof window !== 'undefined') {
+    try {
+      const saved = localStorage.getItem('campuspulse_custom_faculty');
+      if (saved) custom = JSON.parse(saved);
+    } catch {}
+  }
+  const seen = new Set<string>();
+  const combined: FacultyProfile[] = [];
+  for (const f of [...custom, ...base]) {
+    const key = f.faculty_id.toUpperCase();
+    if (!seen.has(key)) {
+      seen.add(key);
+      combined.push(f);
+      MOCK_FACULTY_PROFILES[key] = f;
+      MOCK_FACULTY_PROFILES[f.reg_no.toUpperCase()] = f;
+    }
+  }
+  return combined;
 }
 
 export async function lookupFacultyProfile(id: string): Promise<FacultyProfile | null> {
   const cleanId = id.trim().toUpperCase();
-  const found = MOCK_FACULTY_PROFILES[cleanId];
-  if (found) return found;
-
-  // Case-insensitive partial search across all faculty
-  const all = Object.values(MOCK_FACULTY_PROFILES);
-  const match = all.find(
+  const all = await getAllFacultyProfiles();
+  const found = all.find(
     (f) =>
-      f.reg_no.toLowerCase() === cleanId.toLowerCase() ||
-      f.faculty_id.toLowerCase() === cleanId.toLowerCase() ||
+      f.reg_no.toUpperCase() === cleanId ||
+      f.faculty_id.toUpperCase() === cleanId ||
       f.full_name.toLowerCase().includes(cleanId.toLowerCase()) ||
       (f.research_interests && f.research_interests.toLowerCase().includes(cleanId.toLowerCase()))
   );
-  return match || null;
+  return found || null;
 }
 
 export async function lookupStudentProfile(id: string): Promise<StudentAdminProfile | null> {
@@ -611,6 +626,19 @@ export async function commitCSVStudentImport(validRecords: any[]): Promise<{ imp
 // ----------------------------------------------------------------------------
 
 export async function getAdminUsers(): Promise<AdminUser[]> {
+  if (typeof window !== 'undefined') {
+    try {
+      const saved = localStorage.getItem('campuspulse_custom_users');
+      if (saved) {
+        const customUsers = JSON.parse(saved) as AdminUser[];
+        customUsers.forEach((cu) => {
+          if (!MOCK_USERS_STORE.some((u) => u.reg_no.toUpperCase() === cu.reg_no.toUpperCase())) {
+            MOCK_USERS_STORE.unshift(cu);
+          }
+        });
+      }
+    } catch {}
+  }
   return MOCK_USERS_STORE;
 }
 
@@ -642,6 +670,169 @@ export async function toggleUserStatus(userId: string): Promise<AdminUser | null
     severity: target.status === 'active' ? 'success' : 'critical',
   });
   return target;
+}
+
+export interface NewFacultyInput {
+  full_name: string;
+  faculty_id: string;
+  email: string;
+  designation: string;
+  department: string;
+  assigned_sections: string[];
+  office_location?: string;
+  workload_hours_per_week?: number;
+  research_interests?: string;
+  courses_taught?: string[];
+  photo_url?: string;
+}
+
+export interface NewStudentInput {
+  full_name: string;
+  reg_no: string;
+  email: string;
+  section: string;
+  department: string;
+  cgpa: number;
+  attendance_pct: number;
+  cie1_marks?: number;
+  cie2_marks?: number;
+  assignments_marks?: number;
+  backlogs?: number;
+  placement_status?: string;
+  leetcode_handle?: string;
+  github_handle?: string;
+  codechef_handle?: string;
+}
+
+export async function addFacultyProfile(data: NewFacultyInput): Promise<FacultyProfile> {
+  const cleanId = data.faculty_id.trim().toUpperCase();
+  const rawEmail = data.email.trim().toLowerCase();
+  const normEmail = rawEmail.endsWith('@campus.edu.in') ? rawEmail : `${rawEmail.split('@')[0]}@campus.edu.in`;
+
+  const newProfile: FacultyProfile = {
+    faculty_id: cleanId,
+    reg_no: cleanId,
+    full_name: data.full_name.trim(),
+    department: data.department || 'Computer Science & Engineering',
+    designation: data.designation,
+    research_interests: data.research_interests || 'Artificial Intelligence, Software Systems',
+    photo_url: data.photo_url?.trim() || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
+    profile_url: `https://vignan.ac.in/faculty/${cleanId.toLowerCase()}`,
+    source: 'Admin Direct Registration',
+    assigned_sections: data.assigned_sections.length > 0 ? data.assigned_sections : ['Section A'],
+    attendance_pct: 96.5,
+    workload_hours_per_week: data.workload_hours_per_week || 16,
+    courses_taught: data.courses_taught && data.courses_taught.length > 0 ? data.courses_taught : ['Computer Science Core'],
+    email: normEmail,
+    avatar_url: data.photo_url?.trim() || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
+    office_location: data.office_location || 'Block-A, Room 302',
+    cabin_hours: '10:00 AM - 12:00 PM (Mon-Fri)',
+  };
+
+  MOCK_FACULTY_PROFILES[cleanId] = newProfile;
+  MOCK_FACULTY_PROFILES[newProfile.reg_no] = newProfile;
+
+  const newUser: AdminUser = {
+    id: `usr-fac-${Date.now()}`,
+    email: normEmail,
+    full_name: newProfile.full_name,
+    role: 'faculty',
+    reg_no: cleanId,
+    status: 'active',
+    created_at: new Date().toISOString(),
+  };
+  MOCK_USERS_STORE = [newUser, ...MOCK_USERS_STORE];
+
+  if (typeof window !== 'undefined') {
+    try {
+      const savedFaculty = JSON.parse(localStorage.getItem('campuspulse_custom_faculty') || '[]');
+      localStorage.setItem('campuspulse_custom_faculty', JSON.stringify([newProfile, ...savedFaculty]));
+      const savedUsers = JSON.parse(localStorage.getItem('campuspulse_custom_users') || '[]');
+      localStorage.setItem('campuspulse_custom_users', JSON.stringify([newUser, ...savedUsers]));
+    } catch {}
+  }
+
+  await logAuditEvent({
+    action: 'FACULTY_REGISTERED',
+    actor: 'Administrator (ADM001)',
+    target: `${newProfile.full_name} (${cleanId})`,
+    details: `Registered faculty member. Designation: ${newProfile.designation}, Dept: ${newProfile.department}, Email: ${normEmail}.`,
+    severity: 'success',
+  });
+
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('campuspulse-data-updated'));
+  }
+
+  return newProfile;
+}
+
+export async function addStudentProfile(data: NewStudentInput): Promise<AdminUser> {
+  const cleanRegNo = data.reg_no.trim().toUpperCase();
+  const rawEmail = data.email.trim().toLowerCase();
+  const normEmail = rawEmail.endsWith('@campus.edu.in') ? rawEmail : `${rawEmail.split('@')[0]}@campus.edu.in`;
+
+  const secId = data.section.includes('B') ? 'sec-b' : data.section.includes('C') ? 'sec-c' : 'sec-a';
+  const cie1 = Number(data.cie1_marks ?? 24);
+  const cie2 = Number(data.cie2_marks ?? 22);
+  const avgCie = Number(((cie1 + cie2) / 2).toFixed(1));
+
+  const rawMetrics: RawStudentMetrics = {
+    student_id: `stu-${cleanRegNo.toLowerCase()}`,
+    section_id: secId,
+    reg_no: cleanRegNo,
+    full_name: data.full_name.trim(),
+    cgpa: Number(data.cgpa),
+    backlogs: Number(data.backlogs ?? 0),
+    avg_cie_marks: avgCie,
+    attendance_pct: Number(data.attendance_pct),
+    logins_30d: 24,
+    assignments_done: Number(data.assignments_marks ?? 18),
+    assignments_total: 20,
+    events: 2,
+    clubs: 1,
+    hackathons: 1,
+    certifications: 2,
+    aptitude: 78,
+    coding: 82,
+    mock_interview: 80,
+  };
+
+  addStudentToCohort(rawMetrics);
+
+  const newUser: AdminUser = {
+    id: `usr-stu-${Date.now()}`,
+    email: normEmail,
+    full_name: data.full_name.trim(),
+    role: 'student',
+    reg_no: cleanRegNo,
+    status: 'active',
+    created_at: new Date().toISOString(),
+  };
+  MOCK_USERS_STORE = [newUser, ...MOCK_USERS_STORE];
+
+  if (typeof window !== 'undefined') {
+    try {
+      const savedStudents = JSON.parse(localStorage.getItem('campuspulse_custom_students') || '[]');
+      localStorage.setItem('campuspulse_custom_students', JSON.stringify([rawMetrics, ...savedStudents]));
+      const savedUsers = JSON.parse(localStorage.getItem('campuspulse_custom_users') || '[]');
+      localStorage.setItem('campuspulse_custom_users', JSON.stringify([newUser, ...savedUsers]));
+    } catch {}
+  }
+
+  await logAuditEvent({
+    action: 'STUDENT_ENROLLED',
+    actor: 'Administrator (ADM001)',
+    target: `${data.full_name} (${cleanRegNo})`,
+    details: `Enrolled student in ${data.section}. CGPA: ${data.cgpa}, Attendance: ${data.attendance_pct}%, Backlogs: ${data.backlogs ?? 0}, Email: ${normEmail}.`,
+    severity: 'success',
+  });
+
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('campuspulse-data-updated'));
+  }
+
+  return newUser;
 }
 
 // ----------------------------------------------------------------------------

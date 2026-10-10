@@ -46,7 +46,7 @@ function generateCohort() {
           section_name: sectionName,
           reg_no: '241FA18067',
           full_name: 'MD SAHIL',
-          email: '241fa18067@college.edu.in',
+          email: '241fa18067@campus.edu.in',
           cgpa: 8.5,
           backlogs: 0,
           avg_cie_marks: 8.4,
@@ -82,7 +82,7 @@ function generateCohort() {
           section_name: sectionName,
           reg_no: '241FA04070',
           full_name: 'SAGAR',
-          email: '241fa04070@college.edu.in',
+          email: '241fa04070@campus.edu.in',
           cgpa: 5.5,
           backlogs: 5,
           avg_cie_marks: 4.8,
@@ -118,7 +118,7 @@ function generateCohort() {
           section_name: sectionName,
           reg_no: `${prefixes[sIdx]}${String(idx).padStart(3, '0')}`,
           full_name: 'Aniket Rao',
-          email: `${prefixes[sIdx].toLowerCase()}${String(idx).padStart(3, '0')}@college.edu.in`,
+          email: `${prefixes[sIdx].toLowerCase()}${String(idx).padStart(3, '0')}@campus.edu.in`,
           cgpa: 9.15,
           backlogs: 0,
           avg_cie_marks: 9.2,
@@ -150,7 +150,7 @@ function generateCohort() {
       const fn = firstNames[(idx * 7 + sIdx * 13) % firstNames.length];
       const ln = lastNames[(idx * 11 + sIdx * 5) % lastNames.length];
       const fullName = `${fn} ${ln}`;
-      const email = `${regNo.toLowerCase()}@college.edu.in`;
+      const email = `${regNo.toLowerCase()}@campus.edu.in`;
       const cleanUser = `${fn.toLowerCase()}_${ln.toLowerCase()}`;
 
       if (idx % 8 === 0) {

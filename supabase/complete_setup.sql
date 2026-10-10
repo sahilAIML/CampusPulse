@@ -552,7 +552,7 @@ SELECT
   s.id AS student_id,
   s.reg_no,
   COALESCE(p.full_name, 'Unknown Student') AS full_name,
-  COALESCE(p.email, LOWER(s.reg_no) || '@college.edu.in') AS email,
+  COALESCE(p.email, LOWER(s.reg_no) || '@campus.edu.in') AS email,
   p.avatar_url,
   p.role AS profile_role,
 
@@ -1672,8 +1672,8 @@ BEGIN
       ('f0000000-0000-0000-0000-000000000001', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'ananya.sharma@campus.edu.in', crypt('FacultyPass123!', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"full_name":"Prof. Ananya Sharma"}', NOW(), NOW()),
       ('f0000000-0000-0000-0000-000000000002', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'rajesh.varma@campus.edu.in', crypt('FacultyPass123!', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"full_name":"Prof. Rajesh Varma"}', NOW(), NOW()),
       ('f0000000-0000-0000-0000-000000000003', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', 'sneha.reddy@campus.edu.in', crypt('FacultyPass123!', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"full_name":"Dr. Sneha Reddy"}', NOW(), NOW()),
-      ('u0000000-0000-0000-0000-000000000067', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', '241fa18067@college.edu.in', crypt('StudentPass123!', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"full_name":"MD SAHIL"}', NOW(), NOW()),
-      ('u0000000-0000-0000-0000-000000000070', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', '241fa04070@college.edu.in', crypt('StudentPass123!', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"full_name":"SAGAR"}', NOW(), NOW())
+      ('u0000000-0000-0000-0000-000000000067', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', '241fa18067@campus.edu.in', crypt('StudentPass123!', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"full_name":"MD SAHIL"}', NOW(), NOW()),
+      ('u0000000-0000-0000-0000-000000000070', '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', '241fa04070@campus.edu.in', crypt('StudentPass123!', gen_salt('bf')), NOW(), '{"provider":"email","providers":["email"]}', '{"full_name":"SAGAR"}', NOW(), NOW())
     ON CONFLICT (id) DO NOTHING;
   END IF;
 END $$;
@@ -1684,8 +1684,8 @@ INSERT INTO public.profiles (id, role, full_name, email, avatar_url) VALUES
   ('f0000000-0000-0000-0000-000000000001', 'faculty', 'Prof. Ananya Sharma', 'ananya.sharma@campus.edu.in', 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150'),
   ('f0000000-0000-0000-0000-000000000002', 'faculty', 'Prof. Rajesh Varma', 'rajesh.varma@campus.edu.in', 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150'),
   ('f0000000-0000-0000-0000-000000000003', 'faculty', 'Dr. Sneha Reddy', 'sneha.reddy@campus.edu.in', 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150'),
-  ('u0000000-0000-0000-0000-000000000067', 'student', 'MD SAHIL', '241fa18067@college.edu.in', 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150'),
-  ('u0000000-0000-0000-0000-000000000070', 'student', 'SAGAR', '241fa04070@college.edu.in', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150')
+  ('u0000000-0000-0000-0000-000000000067', 'student', 'MD SAHIL', '241fa18067@campus.edu.in', 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150'),
+  ('u0000000-0000-0000-0000-000000000070', 'student', 'SAGAR', '241fa04070@campus.edu.in', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150')
 ON CONFLICT (id) DO UPDATE SET full_name = EXCLUDED.full_name;
 
 -- ----------------------------------------------------------------------------
@@ -2006,7 +2006,7 @@ BEGIN
         v_profile_id,
         'student',
         v_name,
-        LOWER(v_reg_no) || '@college.edu.in',
+        LOWER(v_reg_no) || '@campus.edu.in',
         'https://images.unsplash.com/photo-' || 
           CASE (v_stu_idx % 6)
             WHEN 0 THEN '1535713875002-d1d0cf377fde'

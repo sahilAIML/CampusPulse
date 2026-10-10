@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { ArrowRight, Sparkles, LogIn, ChevronDown, CheckCircle2, ShieldAlert } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { BlockPuzzleSimulation } from '@/components/hero/BlockPuzzleSimulation';
+import { WorkstationHeroAnimation } from '@/components/hero/WorkstationHeroAnimation';
 import { StatChips } from '@/components/hero/StatChips';
 import { AnnouncementsSection } from '@/components/announcements/AnnouncementsSection';
 import { PlacementsSection } from '@/components/placements/PlacementsSection';
@@ -130,9 +130,9 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* Right Column: Smooth Block Puzzle Gameplay Simulation */}
+              {/* Right Column: Workstation with Chair Facing Desktop */}
               <div className="lg:col-span-5 w-full flex justify-center">
-                <BlockPuzzleSimulation />
+                <WorkstationHeroAnimation />
               </div>
             </div>
           </div>

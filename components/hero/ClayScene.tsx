@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import { BlockPuzzleSimulation } from './BlockPuzzleSimulation';
+import { WorkstationHeroAnimation } from './WorkstationHeroAnimation';
 
 export function ClayScene() {
-  return <BlockPuzzleSimulation />;
+  return <WorkstationHeroAnimation />;
 }

@@ -139,7 +139,7 @@ const STUDENT_DOSSIERS: Record<string, DetailedStudentDossier> = {
   '241FA18067': {
     reg_no: '241FA18067',
     full_name: 'MD SAHIL',
-    email: '241fa18067@college.edu.in',
+    email: '241fa18067@campus.edu.in',
     section: 'A',
     semester: 4,
     department: 'Computer Science & Engineering',
@@ -271,7 +271,7 @@ const STUDENT_DOSSIERS: Record<string, DetailedStudentDossier> = {
   '241FA04070': {
     reg_no: '241FA04070',
     full_name: 'SAGAR',
-    email: '241fa04070@college.edu.in',
+    email: '241fa04070@campus.edu.in',
     section: 'B',
     semester: 4,
     department: 'Computer Science & Engineering',

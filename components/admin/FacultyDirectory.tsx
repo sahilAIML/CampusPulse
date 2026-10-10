@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   GraduationCap,
   Search,
@@ -18,12 +18,14 @@ import {
   Building2,
   CheckCircle2,
   Filter,
+  Plus,
 } from 'lucide-react';
 import { ClayCard } from '../ui/ClayCard';
 import { ClayBadge } from '../ui/ClayBadge';
 import { ClayButton } from '../ui/ClayButton';
 import { ClayInput } from '../ui/ClayInput';
-import { FacultyProfile } from '@/lib/data/admin';
+import { FacultyProfile, getAllFacultyProfiles } from '@/lib/data/admin';
+import { AddEntityModal } from './AddEntityModal';
 import vignanFacultyData from '@/lib/data/vignan_faculty.json';
 
 export function FacultyDirectory() {
@@ -32,8 +34,20 @@ export function FacultyDirectory() {
   const [selectedInterestTag, setSelectedInterestTag] = useState<string>('');
   const [viewMode, setViewMode] = useState<'grid' | 'table'>('grid');
   const [selectedFaculty, setSelectedFaculty] = useState<FacultyProfile | null>(null);
+  const [addModalOpen, setAddModalOpen] = useState(false);
+  const [facultyList, setFacultyList] = useState<FacultyProfile[]>(vignanFacultyData as FacultyProfile[]);
 
-  const facultyList: FacultyProfile[] = vignanFacultyData as FacultyProfile[];
+  const loadFaculty = async () => {
+    const all = await getAllFacultyProfiles();
+    setFacultyList(all);
+  };
+
+  useEffect(() => {
+    loadFaculty();
+    const handleUpdate = () => loadFaculty();
+    window.addEventListener('campuspulse-data-updated', handleUpdate);
+    return () => window.removeEventListener('campuspulse-data-updated', handleUpdate);
+  }, []);
 
   // Designation breakdown
   const stats = useMemo(() => {
@@ -153,6 +167,16 @@ export function FacultyDirectory() {
             <Download className="h-3.5 w-3.5" />
             <span>Export CSV</span>
           </a>
+
+          <ClayButton
+            variant="coral"
+            size="sm"
+            onClick={() => setAddModalOpen(true)}
+            className="flex items-center gap-1.5 shadow-[var(--shadow-clay-coral)]"
+          >
+            <Plus className="h-4 w-4" />
+            <span>+ Add Faculty</span>
+          </ClayButton>
         </div>
       </div>
 
@@ -634,6 +658,14 @@ export function FacultyDirectory() {
           </ClayCard>
         </div>
       )}
+
+      {/* Add Faculty Member Modal */}
+      <AddEntityModal
+        isOpen={addModalOpen}
+        onClose={() => setAddModalOpen(false)}
+        initialTab="faculty"
+        onSuccess={loadFaculty}
+      />
     </div>
   );
 }

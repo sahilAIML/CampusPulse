@@ -18,6 +18,8 @@ import {
   StudentSuccessResult,
 } from './types';
 
+export { DEFAULT_SCORE_WEIGHTS };
+
 // Helper: Median calculation
 function calculateMedian(values: number[]): number {
   if (values.length === 0) return 0;

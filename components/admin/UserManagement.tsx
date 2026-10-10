@@ -9,11 +9,14 @@ import {
   UserX,
   CheckCircle2,
   AlertTriangle,
+  GraduationCap,
+  Plus,
 } from 'lucide-react';
 import { ClayCard } from '../ui/ClayCard';
 import { ClayBadge } from '../ui/ClayBadge';
 import { ClayInput } from '../ui/ClayInput';
 import { ClayButton } from '../ui/ClayButton';
+import { AddEntityModal } from './AddEntityModal';
 import {
   AdminUser,
   getAdminUsers,
@@ -27,15 +30,21 @@ export function UserManagement() {
   const [roleFilter, setRoleFilter] = useState<'all' | 'admin' | 'faculty' | 'student'>('all');
   const [loading, setLoading] = useState(true);
   const [actionMessage, setActionMessage] = useState<string | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalTab, setModalTab] = useState<'student' | 'faculty'>('student');
+
+  const load = async () => {
+    setLoading(true);
+    const data = await getAdminUsers();
+    setUsers([...data]);
+    setLoading(false);
+  };
 
   useEffect(() => {
-    async function load() {
-      setLoading(true);
-      const data = await getAdminUsers();
-      setUsers([...data]);
-      setLoading(false);
-    }
     load();
+    const handleUpdate = () => load();
+    window.addEventListener('campuspulse-data-updated', handleUpdate);
+    return () => window.removeEventListener('campuspulse-data-updated', handleUpdate);
   }, []);
 
   const handleRoleChange = async (userId: string, newRole: 'admin' | 'faculty' | 'student') => {
@@ -88,6 +97,35 @@ export function UserManagement() {
           <p className="text-xs sm:text-sm text-[var(--clay-muted)]">
             Manage institutional identities, promote or reassign administrative privileges, and control platform access.
           </p>
+        </div>
+
+        {/* Action Buttons to Add Student or Faculty */}
+        <div className="flex flex-wrap items-center gap-2.5">
+          <ClayButton
+            variant="coral"
+            size="sm"
+            onClick={() => {
+              setModalTab('student');
+              setModalOpen(true);
+            }}
+            className="flex items-center gap-1.5 shadow-[var(--shadow-clay-coral)]"
+          >
+            <GraduationCap className="h-4 w-4" />
+            <span>+ Add Student</span>
+          </ClayButton>
+
+          <ClayButton
+            variant="teal"
+            size="sm"
+            onClick={() => {
+              setModalTab('faculty');
+              setModalOpen(true);
+            }}
+            className="flex items-center gap-1.5 shadow-[var(--shadow-clay-teal)]"
+          >
+            <Users className="h-4 w-4" />
+            <span>+ Add Faculty</span>
+          </ClayButton>
         </div>
       </div>
 
@@ -194,6 +232,14 @@ export function UserManagement() {
           </table>
         </div>
       </ClayCard>
+
+      {/* Add Student / Faculty Modal */}
+      <AddEntityModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        initialTab={modalTab}
+        onSuccess={load}
+      />
     </div>
   );
 }

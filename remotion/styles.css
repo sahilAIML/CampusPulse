@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Outfit:wght@600;700;800;900&display=swap');
+
+:root {
+  --color-clay-base: #EEF1F6;
+  --color-clay-surface: #F5F7FA;
+  --color-clay-card: #FFFFFF;
+  --color-coral: #FF7A59;
+  --color-coral-dark: #E65C38;
+  --color-coral-soft: #FFEBE6;
+  --color-teal: #2EC4B6;
+  --color-teal-dark: #1E9D91;
+  --color-teal-soft: #E6F9F7;
+  --color-sun: #FFC857;
+  --color-sun-dark: #DDA527;
+  --color-sun-soft: #FFF8E7;
+  --color-navy: #0F172A;
+  --color-slate: #1E293B;
+  --color-muted: #64748B;
+  --color-subtle: #94A3B8;
+  
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: var(--color-clay-base);
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--color-slate);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--color-navy);
+  letter-spacing: -0.02em;
+}
+
+.clay-base {
+  background-color: #EEF1F6;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.7) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(200, 214, 230, 0.4) 0%, transparent 45%);
+}
+
+.clay-card {
+  background: #FFFFFF;
+  border-radius: 32px;
+  box-shadow: 
+    16px 16px 32px rgba(166, 180, 200, 0.45),
+    -14px -14px 28px rgba(255, 255, 255, 0.95),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(166, 180, 200, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.clay-card-convex {
+  background: linear-gradient(145deg, #FFFFFF 0%, #F5F8FC 100%);
+  border-radius: 32px;
+  box-shadow: 
+    18px 18px 36px rgba(160, 175, 195, 0.45),
+    -14px -14px 28px rgba(255, 255, 255, 1),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.9),
+    inset -2px -2px 4px rgba(180, 195, 215, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.clay-pill {
+  border-radius: 9999px;
+  box-shadow: 
+    8px 8px 18px rgba(166, 180, 200, 0.4),
+    -8px -8px 16px rgba(255, 255, 255, 0.95),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.8),
+    inset -1px -1px 2px rgba(166, 180, 200, 0.2);
+}
+
+.clay-inset {
+  border-radius: 24px;
+  box-shadow: 
+    inset 6px 6px 12px rgba(166, 180, 200, 0.35),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.9);
+}
+
+.clay-laptop-screen {
+  border-radius: 20px;
+  box-shadow: 
+    inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+    0 25px 50px -12px rgba(100, 116, 139, 0.4);
+}
+
+.clay-phone-screen {
+  border-radius: 38px;
+  box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.2),
+    0 25px 50px -12px rgba(100, 116, 139, 0.35);
+}

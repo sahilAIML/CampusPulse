@@ -168,7 +168,7 @@ export const MOCK_AUTH_USERS: Record<string, AuthUser> = {
   },
   faculty: {
     id: 'f0000000-0000-0000-0000-000000000001',
-    email: 'k.v.krishna.kishore@vignan.ac.in',
+    email: 'ananya.sharma@campus.edu.in',
     full_name: 'Dr. K.V. Krishna Kishore',
     role: 'faculty',
     reg_no: 'CSE_001',
@@ -177,7 +177,7 @@ export const MOCK_AUTH_USERS: Record<string, AuthUser> = {
   },
   student_sahil: {
     id: 'u0000000-0000-0000-0000-000000000067',
-    email: '241fa18067@college.edu.in',
+    email: '241fa18067@campus.edu.in',
     full_name: 'MD SAHIL',
     role: 'student',
     reg_no: '241FA18067',
@@ -186,7 +186,7 @@ export const MOCK_AUTH_USERS: Record<string, AuthUser> = {
   },
   student_sagar: {
     id: 'u0000000-0000-0000-0000-000000000070',
-    email: '241fa04070@college.edu.in',
+    email: '241fa04070@campus.edu.in',
     full_name: 'SAGAR',
     role: 'student',
     reg_no: '241FA04070',

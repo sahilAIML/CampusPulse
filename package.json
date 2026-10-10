@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview": "remotion preview remotion/index.ts",
+    "render": "remotion render remotion/index.ts CampusPulseLandscape out/campuspulse-16x9.mp4",
+    "render:vertical": "remotion render remotion/index.ts CampusPulseVertical out/campuspulse-9x16.mp4",
+    "video:preview": "remotion preview remotion/index.ts",
+    "video:render": "remotion render remotion/index.ts CampusPulseLandscape out/campuspulse-16x9.mp4",
+    "video:render-vertical": "remotion render remotion/index.ts CampusPulseVertical out/campuspulse-9x16.mp4"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.1",
@@ -21,11 +27,13 @@
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
+    "@remotion/cli": "^4.0.534",
     "@types/node": "^20.16.5",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
+    "remotion": "^4.0.534",
     "tailwindcss": "^3.4.11",
     "typescript": "^5.6.2"
   }

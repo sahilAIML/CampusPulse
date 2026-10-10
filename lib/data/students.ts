@@ -267,11 +267,34 @@ function generateMockCohort(): RawStudentMetrics[] {
 
 // In-memory cache for fast mock mode execution
 let cachedMockCohort: RawStudentMetrics[] | null = null;
-function getCohort(): RawStudentMetrics[] {
+export function getCohort(): RawStudentMetrics[] {
   if (!cachedMockCohort) {
     cachedMockCohort = generateMockCohort();
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('campuspulse_custom_students');
+        if (saved) {
+          const custom = JSON.parse(saved) as RawStudentMetrics[];
+          custom.forEach((c) => {
+            if (!cachedMockCohort!.some((s) => s.reg_no.toUpperCase() === c.reg_no.toUpperCase())) {
+              cachedMockCohort!.unshift(c);
+            }
+          });
+        }
+      } catch {}
+    }
   }
   return cachedMockCohort;
+}
+
+export function addStudentToCohort(student: RawStudentMetrics) {
+  const cohort = getCohort();
+  const existingIdx = cohort.findIndex((s) => s.reg_no.toUpperCase() === student.reg_no.toUpperCase());
+  if (existingIdx >= 0) {
+    cohort[existingIdx] = student;
+  } else {
+    cohort.unshift(student);
+  }
 }
 
 // Active in-memory interventions store for mock mode

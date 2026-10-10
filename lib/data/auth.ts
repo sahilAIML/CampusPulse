@@ -16,13 +16,26 @@ export async function loginUser(
 ): Promise<AuthUser> {
   const normEmail = email.toLowerCase().trim();
 
+  // Check custom updated password if user changed it via Forgot Password
+  if (typeof window !== 'undefined' && _password) {
+    try {
+      const customPasswords = JSON.parse(localStorage.getItem('campuspulse_custom_passwords') || '{}');
+      const savedPass = customPasswords[normEmail];
+      if (savedPass && savedPass !== _password) {
+        throw new Error('Incorrect password. Please enter the new password you set.');
+      }
+    } catch (e: any) {
+      if (e?.message?.includes('Incorrect password')) throw e;
+    }
+  }
+
   // Authenticate registered institutional directory credentials
-  if (!isSupabaseConfigured() || normEmail.includes('vignan.ac.in') || normEmail.includes('campus.edu.in') || normEmail.includes('college.edu.in')) {
+  if (!isSupabaseConfigured() || normEmail.includes('edu.in') || normEmail.includes('vignan.ac.in') || normEmail.includes('campus.edu.in') || normEmail.includes('college.edu.in')) {
     if (normEmail.includes('admin')) {
       saveSessionUser(MOCK_AUTH_USERS.admin);
       return MOCK_AUTH_USERS.admin;
     }
-    if (normEmail.includes('faculty') || normEmail.includes('krishna') || normEmail.includes('kishore') || normEmail.includes('cse_') || normEmail.includes('vignan.ac.in') || normEmail.includes('ananya')) {
+    if (normEmail.includes('faculty') || normEmail.includes('ananya') || normEmail.includes('krishna') || normEmail.includes('kishore') || normEmail.includes('cse_') || normEmail.includes('vignan.ac.in')) {
       saveSessionUser(MOCK_AUTH_USERS.faculty);
       return MOCK_AUTH_USERS.faculty;
     }
@@ -104,4 +117,42 @@ export function logoutUser(): void {
   if (supabase) {
     supabase.auth.signOut().catch(() => {});
   }
+}
+
+export async function resetUserPassword(
+  email: string,
+  newPassword: string
+): Promise<{ success: boolean; message: string }> {
+  const normEmail = email.toLowerCase().trim();
+  if (!normEmail || !normEmail.includes('@')) {
+    throw new Error('Please enter a valid institutional email address.');
+  }
+  if (!newPassword || newPassword.length < 6) {
+    throw new Error('New password must contain at least 6 characters.');
+  }
+
+  // Persist custom password choice
+  if (typeof window !== 'undefined') {
+    try {
+      const existing = JSON.parse(localStorage.getItem('campuspulse_custom_passwords') || '{}');
+      existing[normEmail] = newPassword;
+      localStorage.setItem('campuspulse_custom_passwords', JSON.stringify(existing));
+    } catch (e) {
+      console.warn('[Auth DAL] Could not persist custom password:', e);
+    }
+  }
+
+  const supabase = getSupabaseClient();
+  if (supabase) {
+    try {
+      await supabase.auth.updateUser({ password: newPassword });
+    } catch {
+      // Non-blocking in mock mode
+    }
+  }
+
+  return {
+    success: true,
+    message: 'Password successfully changed! You can now sign in with your chosen password.',
+  };
 }
