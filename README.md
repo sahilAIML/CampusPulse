@@ -2,6 +2,8 @@
 ### KPMG "Smart Campus Analytics" Challenge Solution
 *Decision Intelligence, Explainable Early-Warning Analytics & ML-Driven Student Success*
 
+[![Live Deployment](https://img.shields.io/badge/Live_Deployment-campuspulse.bytexl.live-2EC4B6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://campuspulse.bytexl.live/)
+
 [![Next.js 14](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript 5](https://img.shields.io/badge/TypeScript-5.6-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
@@ -14,6 +16,8 @@
 ---
 
 ## 🌟 Executive Overview
+> 🌐 **Live Production Deployment**: [**https://campuspulse.bytexl.live/**](https://campuspulse.bytexl.live/)
+
 **CampusPulse** transforms fragmented campus data (biometric RFID turnstiles, continuous internal evaluation marks, LMS engagement logs, coding profiles, and CDC placement assessments) into **actionable, explainable decision intelligence**. 
 
 Unlike retrospective dashboards that report failures after semester finals, CampusPulse operates as a **leading-indicator early-warning platform**, empowering faculty mentors to intervene weeks ahead, forecasting machine-learning placement risk, and providing students with algorithmic, high-ROI improvement roadmaps.
@@ -93,15 +97,15 @@ Unlike retrospective dashboards that report failures after semester finals, Camp
 
 ## 🔑 Verified Login Credentials
 
-| Role | Name / Identifier | Email | Password | Access Portal |
+| Role | Name / Identifier | Email | Password | Live Access Portal |
 | :--- | :--- | :--- | :--- | :--- |
-| **Student** | MD SAHIL (`241FA18067`) | `241fa18067@campus.edu.in` | `Password@123` | [`/student`](http://localhost:3000/student) |
-| **Student (At-Risk)** | SAGAR (`241FA04070`) | `241fa04070@campus.edu.in` | `Password@123` | [`/student`](http://localhost:3000/student) |
-| **Faculty (Mentor)** | Prof. Ananya Sharma (`FAC210`) | `ananya.sharma@campus.edu.in` | `Password@123` | [`/faculty`](http://localhost:3000/faculty) |
-| **Faculty (Alternate)** | Dr. K.V. Krishna Kishore (`CSE_001`) | `k.v.krishna.kishore@campus.edu.in` | `Password@123` | [`/faculty`](http://localhost:3000/faculty) |
-| **Admin** | Dr. K. Ramanathan (`ADM001`) | `admin@campus.edu.in` | `Password@123` | [`/admin`](http://localhost:3000/admin) |
+| **Student** | MD SAHIL (`241FA18067`) | `241fa18067@campus.edu.in` | `Password@123` | [**Live `/student`**](https://campuspulse.bytexl.live/student) |
+| **Student (At-Risk)** | SAGAR (`241FA04070`) | `241fa04070@campus.edu.in` | `Password@123` | [**Live `/student`**](https://campuspulse.bytexl.live/student) |
+| **Faculty (Mentor)** | Prof. Ananya Sharma (`FAC210`) | `ananya.sharma@campus.edu.in` | `Password@123` | [**Live `/faculty`**](https://campuspulse.bytexl.live/faculty) |
+| **Faculty (Alternate)** | Dr. K.V. Krishna Kishore (`CSE_001`) | `k.v.krishna.kishore@campus.edu.in` | `Password@123` | [**Live `/faculty`**](https://campuspulse.bytexl.live/faculty) |
+| **Admin** | Dr. K. Ramanathan (`ADM001`) | `admin@campus.edu.in` | `Password@123` | [**Live `/admin`**](https://campuspulse.bytexl.live/admin) |
 
-*Note: 1-click Quick Login shortcuts are also available directly on the landing page auth modal and login screen.*
+*Note: 1-click Quick Login shortcuts are also available directly on the [Live Landing Page](https://campuspulse.bytexl.live/) auth modal and login screen.*
 
 ### 🔐 Self-Service Forgot Password & Security
 - **Forgot Password Flow**: Accessible directly from both the landing page Auth Modal and the dedicated `/login` page.
@@ -223,15 +227,23 @@ npm run start
 ```
 
 ### 5. 🐳 Docker & byteXL Nimbus Deployment
-CampusPulse includes a production-ready container build:
+CampusPulse is deployed live on **byteXL Nimbus** at [**https://campuspulse.bytexl.live/**](https://campuspulse.bytexl.live/).
+
+#### Container Build & Run:
 ```bash
-# Build the Docker container image
+# Build the production container image
 docker build -t campuspulse .
 
 # Run the container (binds to port 5000 or custom $PORT)
 docker run -p 5000:5000 campuspulse
 ```
 *Access the containerized instance at [http://localhost:5000](http://localhost:5000).*
+
+#### Updating the Live byteXL Nimbus Deployment:
+1. All changes are committed and pushed to the `main` branch of this GitHub repository.
+2. In the **byteXL Nimbus Console** (or deployment webhook), navigate to the **CampusPulse** service.
+3. Click **"Redeploy"** / **"Deploy Latest Commit"** (or trigger rebuild) to pull the latest Docker image build from GitHub `main`.
+4. The live site at [https://campuspulse.bytexl.live/](https://campuspulse.bytexl.live/) will automatically update with zero downtime.
 
 ---
 
