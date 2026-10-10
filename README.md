@@ -7,7 +7,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?logo=supabase)](https://supabase.com/)
 [![Google Gemini](https://img.shields.io/badge/AI_Assistant-Google_Gemini-4285F4?logo=google)](https://ai.google.dev/)
-[![ML Model](https://img.shields.io/badge/ML_Model-Logistic_Regression_Inference-FF6F00?logo=scikit-learn)](https://github.com/sahilAIML/CampusPulse)
+[![ML Model](https://img.shields.io/badge/ML_Model-Logistic_Regression_Inference-FF6F00?logo=scikit-learn)](https://github.com/sahilAIML/CAMPUSPULSE-Smart-Campus-Decision-Intelligence)
 [![Font](https://img.shields.io/badge/Font-Oxanium-coral)](https://fonts.google.com/specimen/Oxanium)
 [![WCAG AA](https://img.shields.io/badge/Accessibility-WCAG_AA_Compliant-success)](#accessibility--design-system)
 
@@ -24,7 +24,11 @@ Unlike retrospective dashboards that report failures after semester finals, Camp
 
 ### 1. 🏛️ Public Landing Page (`/`)
 - **Cinematic HD Video Background**: Edge-to-edge campus background animation with dark frosted glassmorphism scrim and luminous white typography.
-- **Interactive Block Puzzle Simulation**: Smooth 8x8 tactile arcade simulation with automatic polyomino placement, streak multipliers, combo clears, and piece staging tray.
+- **Continuous 60 FPS Workstation Hero Animation**: 
+  - **Ergonomic Task Chair (Facing Opposite to Us)**: Foreground perspective viewed from behind looking forward into the workspace, featuring articulated spine skeleton, lumbar band, armrests, pneumatic cylinder, 5-star wheeled base, and smooth organic breathing/swivel motion.
+  - **Ultrawide Computer Desktop**: Elevated on aluminum arm casting ambient bias back-glow onto the wall, streaming live telemetry (continuous SVG sine wave heartbeat, fluctuating readiness bars, Grade A+ gauge).
+  - **Interactive Screen Modes**: One-click switcher between **Analytics HUD**, **IDE Code Terminal** (live Python streaming), and **Cyber Net**, plus pause/resume controls.
+  - **Workstation Desk Setup**: RGB mechanical keyboard, precision wireless mouse, ceramic coffee mug with continuous rising steam curls, succulent planter, and a desktop PC chassis with dual cooling fans rotating 360° continuously.
 - **Live Institutional Metric Chips**: Animated count-ups for students tracked ($120+$), at-risk caught early ($28$), average CGPA ($7.64$), and placement rate ($88.5\%$).
 - **Official Circulars & Announcements**: Category-filtered notices (exam timetables, hackathons, placement drives, campus fests).
 - **Placement Explorer (`/placements`)**: Interactive 8-year trend ComposedChart (2019–2026) and recruiter hiring statistics (Amazon, Blinkit, TCS, Cognizant, Infosys, HCL).
@@ -99,6 +103,11 @@ Unlike retrospective dashboards that report failures after semester finals, Camp
 
 *Note: 1-click Quick Login shortcuts are also available directly on the landing page auth modal and login screen.*
 
+### 🔐 Self-Service Forgot Password & Security
+- **Forgot Password Flow**: Accessible directly from both the landing page Auth Modal and the dedicated `/login` page.
+- **Custom Password Choice**: Students and faculty can select their role, provide their registered `@campus.edu.in` email, and set their own custom password with instant local verification and automatic session login.
+- **Clean Input Fields**: Form inputs feature clean, uncluttered `Email` and `Password` placeholders with zero hardcoded default values.
+
 ---
 
 ## 📊 Datasets Included
@@ -126,23 +135,26 @@ CampusPulse App
 │
 ├── /app/
 │   ├── layout.tsx            # Global layout, Oxanium font & HD background video
-│   ├── page.tsx              # Landing page & Block Puzzle simulation
+│   ├── page.tsx              # Landing page & Workstation Hero Animation
 │   ├── /student/             # Student self-service & ML Placement Risk
 │   ├── /faculty/             # Faculty dashboard, cohort table & exam builder
 │   ├── /admin/               # Admin governance & Vignan Faculty Directory
 │   └── /api/chat/            # Gemini-powered PulseBot API route
 │
 ├── /components/
-│   ├── /hero/                # BlockPuzzleSimulation & StatChips
+│   ├── /hero/                # WorkstationHeroAnimation & StatChips
 │   ├── /admin/               # FacultyDirectory, ProfileLookup, WeightTuner, CSVImporter
 │   ├── /faculty/             # PriorityTable, AnalyticsGrid, ExamGenerator, StudentDrawer
 │   ├── /student/             # PlacementRiskCard, SensitivityPlan, IndicatorCards
+│   ├── /auth/                # AuthModal with Forgot Password flow
 │   └── /chatbot/             # CampusPulseChatbot UI
 │
 ├── /lib/
 │   ├── /data/                # Typed Data Access Layer (students, faculty, admin, auth)
 │   ├── /ml/                  # ML Placement inference engine & trained weights
 │   └── /analytics/           # Success score formula & benchmark engine
+│
+├── /remotion/                # Remotion 4.0 Video Render Pipeline (Landscape & 9:16 Vertical)
 │
 └── /supabase/migrations/
     ├── 20261009000001_initial_schema.sql  # Relational schema with RLS policies
@@ -186,8 +198,8 @@ CampusPulse features a multi-mode theme switcher accessible across **every singl
 
 ### 1. Installation
 ```bash
-git clone https://github.com/sahilAIML/CampusPulse.git
-cd CampusPulse
+git clone https://github.com/sahilAIML/CAMPUSPULSE-Smart-Campus-Decision-Intelligence.git
+cd CAMPUSPULSE-Smart-Campus-Decision-Intelligence
 npm install
 ```
 
@@ -209,6 +221,17 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 npm run build
 npm run start
 ```
+
+### 5. 🐳 Docker & byteXL Nimbus Deployment
+CampusPulse includes a production-ready container build:
+```bash
+# Build the Docker container image
+docker build -t campuspulse .
+
+# Run the container (binds to port 5000 or custom $PORT)
+docker run -p 5000:5000 campuspulse
+```
+*Access the containerized instance at [http://localhost:5000](http://localhost:5000).*
 
 ---
 
