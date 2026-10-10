@@ -91,10 +91,10 @@ Unlike retrospective dashboards that report failures after semester finals, Camp
 
 | Role | Name / Identifier | Email | Password | Access Portal |
 | :--- | :--- | :--- | :--- | :--- |
-| **Student** | MD SAHIL (`241FA18067`) | `241fa18067@college.edu.in` | `Password@123` | [`/student`](http://localhost:3000/student) |
-| **Student (At-Risk)** | SAGAR (`241FA04070`) | `241fa04070@college.edu.in` | `Password@123` | [`/student`](http://localhost:3000/student) |
-| **Faculty (Mentor)** | Dr. K.V. Krishna Kishore (`CSE_001`) | `k.v.krishna.kishore@vignan.ac.in` | `Password@123` | [`/faculty`](http://localhost:3000/faculty) |
-| **Faculty (Alternate)** | Dr. Venkatrama Phani Kumar S (`CSE_002`) | `venkatrama.phani.kumar.s@vignan.ac.in` | `Password@123` | [`/faculty`](http://localhost:3000/faculty) |
+| **Student** | MD SAHIL (`241FA18067`) | `241fa18067@campus.edu.in` | `Password@123` | [`/student`](http://localhost:3000/student) |
+| **Student (At-Risk)** | SAGAR (`241FA04070`) | `241fa04070@campus.edu.in` | `Password@123` | [`/student`](http://localhost:3000/student) |
+| **Faculty (Mentor)** | Dr. K.V. Krishna Kishore (`CSE_001`) | `k.v.krishna.kishore@campus.ac.in` | `Password@123` | [`/faculty`](http://localhost:3000/faculty) |
+| **Faculty (Alternate)** | Dr. Venkatrama Phani Kumar S (`CSE_002`) | `venkatrama.phani.kumar.s@campus.ac.in` | `Password@123` | [`/faculty`](http://localhost:3000/faculty) |
 | **Admin** | Dr. K. Ramanathan (`ADM001`) | `admin@campus.edu.in` | `Password@123` | [`/admin`](http://localhost:3000/admin) |
 
 *Note: 1-click Quick Login shortcuts are also available directly on the landing page auth modal and login screen.*
